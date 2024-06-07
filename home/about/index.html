@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information about this project</title>
+    
+    <meta name="description" content="About">
+    <meta name="keywords" content="about, information, questions, contact, testimonials, footer">
+    <meta name="author" content="Hector Barquero">
+    <meta name="last-modified" content="2024-06-08">
+    
+    <meta property="og:title" content="Information">
+    <meta property="og:description" content="Information">
+    <meta property="og:type" content="website">
+    <!-- need to resolve my domain first, so consider my name a placeholder for now-->
+    <meta property="og:url" content="http://hectorbarquero.com/home/about/index.html">
+    <meta property="og:image" content="http://hectorbarquero.com/assets/images/og-image.png">
+    
+    <!-- following w3 and mdn, using a generic apple favicon for placeholder as i have no logo-->
+    <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/vendor/site.webmanifest">
+    
+    <!-- add hydration later -->
+    <!-- leave dns pre-fetch domain wide -->
+    <!-- need to resolve my domain first, so consider my name a placeholder for now-->
+    <link rel="dns-prefetch" href="//hectorbarquero.com">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-header">Information about this project</h1>
+    </header>
+    <nav class="navbar" role="navigation">
+        <div class="nav-search">
+            <label for="search-input">Search</label>
+            <input type="text" id="search-input" placeholder="Search" aria-label="Search">
+            <button type="button" aria-label="Search Button"><span>Search</span></button>
+            <ul>
+                <li><a href="../welcome/index.html">Welcome</a></li>
+                <li><a href="../tools/index.html">Tools</a></li>
+                <li><a href="../about/index.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h2 id="ctrt-heading" class="font-h2">Learn about this project</h2>
+        <p> This project was made to help technical writers publish documentation, usually in bulk, or perform related functions in the presentation of technical data. It's not just meant for technical writers, but managers, product managers, sales engineers, marketing professionals, and more. Use <span class="font-highlight"> the changelog</span> to see what's new. Connect with me on <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn"> LinkedIn</a> or learn more about this project in the <a href="../about/faq.html">FAQ</a>.</p>
+
+        <section aria-labelledby="welcome-header">
+            <p>About this project</p>
+            <section id="changelog-section" aria-labelledby="changelog-heading">
+                <h2 id="ctrt-heading" class="font-h2">Changelog</h2>
+                <!-- I have a json here for now, but it will need to populate by a script here in unit 4 to render. Json dumps from GitHub or server-->
+                <a href="../assets/js/changelog.json" aria-label="Project Changelog">View the project changelog.</a>
+            </section>
+            <section id="faq-section" aria-labelledby="ctrt-heading">
+                <h2 id="faq-heading" class="font-h2">Frequently Asked Questions</h2>
+                <iframe src="faq.html" title="Frequently Asked Questions" aria-labelledby="ctrt-heading"></iframe>
+            </section>
+        </section>
+    </main>
+    <footer id="contact-footer" role="contentinfo">
+        <ul class="footer-links">
+            <li class="footer-item">
+                <a href="https://www.reddit.com/r/technicalwriting/" aria-label="Reddit" class="footer-link">
+                    <img src="../../assets/icons/reddit-icon.png" alt="Reddit Icon" width="24" height="24" loading="lazy">
+                    Reddit
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn" class="footer-link">
+                    <img src="../../assets/icons/linkedin-icon.jpg" alt="LinkedIn Icon" width="24" height="24" loading="lazy">
+                    LinkedIn
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://github.com/hectorbarquero" aria-label="GitHub" class="footer-link">
+                    <img src="../../assets/icons/github-icon.png" alt="GitHub Icon" width="24" height="24" loading="lazy">
+                    GitHub
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="../../docs/LICENSE.txt" aria-label="GNU License Compliance Document" class="footer-link">
+                    <img src="../../assets/icons/gnu-public-license-icon.png" alt="GNU License Icon" width="24" height="24" loading="lazy">
+                    Compliance
+                </a>
+            </li>
+        </ul>
+        <p>Brought to you by Hector Barquero, &copy; 2024</p>
+    </footer> 
+</body>
+</html>
