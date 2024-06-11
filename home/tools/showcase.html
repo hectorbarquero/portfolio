@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hector's toolbox</title>
+    
+    <meta name="description" content="Welcome.">
+    <meta name="keywords" content="tools, about, welcome, news, showcase, testimonials, footer">
+    <meta name="author" content="Hector Barquero">
+    <meta name="last-modified" content="2024-06-14">
+    
+    <meta property="og:title" content="Hector's toolbox">
+    <meta property="og:description" content="Welcome.">
+    <meta property="og:type" content="website">
+    <!-- need to resolve my domain first, so consider my name a placeholder for now-->
+    <meta property="og:url" content="http://hectorbarquero.com/home/welcome/index.html">
+    <meta property="og:image" content="http://hectorbarquero.com/assets/images/og-image.png">
+    
+ <!-- following w3 and mdn, using a generic apple favicon for placeholder as i have no logo-->
+ <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
+ <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+ <link rel="manifest" href="../../assets/vendor/site.webmanifest">
+    
+    <!-- add hydration later -->
+    <!-- leave dns pre-fetch domain wide -->
+    <!-- need to resolve my domain first, so consider my name a placeholder for now-->
+    <link rel="dns-prefetch" href="//hectorbarquero.com">
+
+</head>
+<body>
+    <div class="container">
+        <main role="main">
+            <div class="navbar" role="navigation">
+                <div class="nav-search">
+                    <label for="search-input">Search</label>
+                    <input type="text" id="search-input" placeholder="Search" aria-label="Search">
+                    <button type="button" aria-label="Search button"><span>Search</span></button>
+                    <ul>
+                        <li><a href="../welcome/index.html">Welcome</a></li>
+                        <li>
+                            <a href="../tools/index.html" aria-haspopup="true" aria-expanded="false" aria-controls="tools-submenu">Tools</a>
+                            <ul id="submenu" aria-label="Tools submenu">
+                                <li><a href="../tools/showcase.html">Showcase</a></li>
+                                <!-- Add more sub-items here if needed -->
+                            </ul>
+                        </li>
+                        <li><a href="../about/index.html">About</a></li>
+                            <ul id="submenu" aria-label="About submenu">
+                                <li><a href="../about/faq.html">FAQ</a></li>
+                            </ul>
+                    </ul>
+                </div>
+            <div class="showcase">
+                
+                <!-- update with showcase group one row-->
+                <section id="showcase-1" class="showcase-row" aria-labelledby="showcase-row-one">
+                    <div class="showcase-group" role="complementary">
+                        <h2 class="ctrt-heading">Docs as code</h2>
+                        <h3 class="third-indent-heading">Publish documentation online, right from your IDE.</h3>
+                    </div>
+                    <div class="carousel" aria-label="showcase row one">
+                        <div class="carousel-item">
+                            <!--add image-->
+                            <img src="path/to/image1.jpg" alt="Description" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                             <!--add image-->
+                            <img src="path/to/image2.jpg" alt="Description" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                             <!--add image-->
+                            <img src="path/to/image3.jpg" alt="Description" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- update with showcase group two row -->
+                <section id="showcase-2" class="showcase-row" aria-labelledby="showcase-row-two">
+                    <div class="showcase-group" role="complementary">
+                        <h2 class="ctrt-heading">Desktop published docs</h2>
+                        <h3 class="third-indent-heading">Are your docs .pdf? These tools are for you./h3>
+                    </div>
+                    <div class="carousel" aria-label="Showcase row two">
+                        <div class="carousel-item">
+                            <!--add image-->
+                            <img src="path/to/image1.jpg" alt="Description" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <!--add image-->
+                            <img src="path/to/image2.jpg" alt="Description" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <!--add image-->
+                            <img src="path/to/image3.jpg" alt="Description" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- update with showcase group three row -->
+                <section id="showcase-3" class="showcase-row" aria-labelledby="showcase-row-three">
+                    <div class="showcase-group" role="complementary">
+                        <h2 class="ctrt-heading">Product documentation</h2>
+                        <h3 class="third-indent-heading">Need to handle datasheets, specs, or product docs? Check these out.</h3>
+                    </div>
+                    <div class="carousel" aria-label="Showcase Row 3 Carousel">
+                        <div class="carousel-item">
+                            <!--add image-->
+                            <img src="path/to/image1.jpg" alt="Description" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <!--add image-->
+                            <img src="path/to/image2.jpg" alt="Description" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <!--add image-->
+                            <img src="path/to/image3.jpg" alt="Description" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
