@@ -24,7 +24,7 @@
  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
  <link rel="manifest" href="../../assets/vendor/site.webmanifest">
-    
+     
     <!-- add hydration later -->
     <!-- leave dns pre-fetch domain wide -->
     <!-- need to resolve my domain first, so consider my name a placeholder for now-->
@@ -81,17 +81,25 @@
             <div class="right-pane">
                 <div class="timeline">
                     <div class="navbar" role="navigation">
-                        <div class="nav-search">
-                            <label for="search-input">Search</label>
-                            <input type="text" id="search-input" placeholder="Search" aria-label="Search">
-                            <button type="button" aria-label="Search Button"><span>Search</span></button>
-                            <ul>
-                                <li><a href="../welcome/index.html">Welcome</a></li>
-                                <li><a href="../tools/index.html">Tools</a></li>
-                                <li><a href="../about/index.html">About</a></li>
-                            </ul>
+                        <div class="navbar" role="navigation">
+                            <div class="nav-search">
+                                <label for="search-input">Search</label>
+                                <input type="text" id="search-input" placeholder="Search" aria-label="Search">
+                                <button type="button" aria-label="Search button"><span>Search</span></button>
+                                <ul>
+                                    <li><a href="../welcome/index.html">Welcome</a></li>
+                                    <li>
+                                        <a href="../tools/index.html" aria-haspopup="true" aria-expanded="false" aria-controls="tools-submenu">Tools</a>
+                                        <ul id="submenu" aria-label="Tools submenu">
+                                            <li><a href="../tools/showcase.html">Showcase</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../about/index.html">About</a></li>
+                                        <ul id="submenu" aria-label="About submenu">
+                                            <li><a href="../about/faq.html">FAQ</a></li>
+                                        </ul>
+                                </ul>
                         </div>
-                    </div>
                     <section id="testimonials" aria-labelledby="testimonials-heading">
                         <h2 class="ctrt-heading">What our users say</h2>
                         <ul>

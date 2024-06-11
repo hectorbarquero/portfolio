@@ -31,17 +31,24 @@
     <link rel="dns-prefetch" href="//hectorbarquero.com">
 
 </head>
-    <div class="navbar" role="navigation">
-        <div class="nav-search">
-            <label for="search-input">Search</label>
-            <input type="text" id="search-input" placeholder="Search" aria-label="Search">
-            <button type="button" aria-label="Search Button"><span>Search</span></button>
-            <ul>
-                <li><a href="../welcome/index.html">Welcome</a></li>
-                <li><a href="../home/tools/index.html">Tools</a></li>
-                <li><a href="../home/about/index.html">About</a></li>
-            </ul>
-        </div>
+<div class="navbar" role="navigation">
+    <div class="nav-search">
+        <label for="search-input">Search</label>
+        <input type="text" id="search-input" placeholder="Search" aria-label="Search">
+        <button type="button" aria-label="Search button"><span>Search</span></button>
+        <ul>
+            <li><a href="../welcome/index.html">Welcome</a></li>
+            <li>
+                <a href="../tools/index.html" aria-haspopup="true" aria-expanded="false" aria-controls="tools-submenu">Tools</a>
+                <ul id="submenu" aria-label="Tools submenu">
+                    <li><a href="../tools/showcase.html">Showcase</a></li>
+                </ul>
+            </li>
+            <li><a href="../about/index.html">About</a></li>
+                <ul id="submenu" aria-label="About submenu">
+                    <li><a href="../about/faq.html">FAQ</a></li>
+                </ul>
+        </ul>
     </div>
 <body>
     <header id="header" role="banner">
