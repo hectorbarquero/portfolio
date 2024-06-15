@@ -1,0 +1,30 @@
+/* add cache busting */
+/* to be done in unit 3*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+/* h1, h2, h3 */
+.welcome-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+    color: #5628EE; /* Trendy tech-like color */
+}
+
+.ctrt-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem; /* Web appropriate for H2 */
+    font-weight: 700;
+    margin: 10px 0;
+    color: #2F3545; /* Complementary tech-like color */
+}
+
+.third-indent-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem; /* Web appropriate for H3 */
+    font-weight: 400;
+    margin: 5px 0 15px 20px;
+    color: #2F3545; /* Complementary tech-like color */
+}

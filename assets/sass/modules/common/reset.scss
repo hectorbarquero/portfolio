@@ -1,0 +1,13 @@
+/*this is my reset style sheet, standards by Tantek Çelik, part of the Yahoo User Interface Library (YUI). I'm going to normalize formatting to remove browser styles.*/
+
+* {
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;
+}
+
+.reset-browser-style {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}

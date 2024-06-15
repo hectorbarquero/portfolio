@@ -1,0 +1,14 @@
+{
+  "_comment": "i'm running builds manually for granular ctrl, but use sass-watch if lazy",
+  "_comment2": "sass-watch: sass --watch assets/sass/main.scss css/styles.css*/",
+  "name": "vendor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/sass/main.scss css/styles.css"
+  },
+  "keywords": [],
+  "author": "Hector Barquero",
+  "license": "ISC",
+  "description": "run sass and convert to valid css"
+}

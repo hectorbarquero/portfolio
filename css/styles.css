@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*this is my reset style sheet, standards by Tantek Çelik, part of the Yahoo User Interface Library (YUI). I'm going to normalize formatting to remove browser styles.*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.reset-browser-style {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+/* add cache busting */
+/* to be done in unit 3*/
+/* h1, h2, h3 */
+.welcome-header {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+  color: #5628EE; /* Trendy tech-like color */
+}
+
+.ctrt-heading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem; /* Web appropriate for H2 */
+  font-weight: 700;
+  margin: 10px 0;
+  color: #2F3545; /* Complementary tech-like color */
+}
+
+.third-indent-heading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem; /* Web appropriate for H3 */
+  font-weight: 400;
+  margin: 5px 0 15px 20px;
+  color: #2F3545; /* Complementary tech-like color */
+}
+
+/* Base Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #F5F9FF;
+  color: #2F3545;
+  margin: 0;
+  padding: 0;
+}
+
+/* para */
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #2F3545;
+}
+
+/*# sourceMappingURL=styles.css.map */
