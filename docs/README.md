@@ -9,57 +9,57 @@ assets contains: project assets, including scripts, sass, css, icons, and images
 docs contains: license, and README. For supporting project documentation, check GitHub through the tools links on the project site.
 home: main root of site. Contains .html files for about, tools, and welcome -- the main three navigation options of the site. index.html is served up first, with a welcome screen, which serves as a way to load resources in advance.
 
-.
-├── assets
-│   ├── fonts
-│   ├── icons
-│   │   ├── apple-touch-icon.png
-│   │   ├── github-icon.png
-│   │   ├── gnu-public-license-icon.png
-│   │   ├── linkedin-icon.jpg
-│   │   └── reddit-icon.png
-│   ├── images
-│   │   ├── image-temp-create-site.png
-│   │   ├── image-temp-nvim-theme.jpg
-│   │   └── og-image.png
-│   ├── js
-│   │   ├── changelog.json
-│   │   ├── downloads.js
-│   │   ├── names.json
-│   │   ├── news.js
-│   │   ├── scripts.js
-│   │   └── showcase.js
-│   ├── sass
-│   │   ├── main.scss
-│   │   └── modules
-│   │       ├── common
-│   │       │   └── reset.scss
-│   │       ├── layouts
-│   │       │   ├── body.scss
-│   │       │   ├── headings.scss
-│   │       │   └── para.scss
-│   │       └── pages
-│   │           ├── about.scss
-│   │           ├── tools.scss
-│   │           └── welcome.scss
-│   └── vendor
-├── css
-│   ├── styles.css
-│   └── styles.css.map
-├── docs
-│   ├── LICENSE.txt
-│   └── README.txt
-├── home
-│   ├── about
-│   │   ├── faq.html
-│   │   └── index.html
-│   ├── tools
-│   │   ├── index.html
-│   │   └── showcase.html
-│   └── welcome
-│       └── index.html
-├── index.html
-└── package.json
+    .
+    ├── assets
+    │   ├── fonts
+    │   ├── icons
+    │   │   ├── apple-touch-icon.png
+    │   │   ├── github-icon.png
+    │   │   ├── gnu-public-license-icon.png
+    │   │   ├── linkedin-icon.jpg
+    │   │   └── reddit-icon.png
+    │   ├── images
+    │   │   ├── image-temp-create-site.png
+    │   │   ├── image-temp-nvim-theme.jpg
+    │   │   └── og-image.png
+    │   ├── js
+    │   │   ├── changelog.json
+    │   │   ├── downloads.js
+    │   │   ├── names.json
+    │   │   ├── news.js
+    │   │   ├── scripts.js
+    │   │   └── showcase.js
+    │   ├── sass
+    │   │   ├── main.scss
+    │   │   └── modules
+    │   │       ├── common
+    │   │       │   └── reset.scss
+    │   │       ├── layouts
+    │   │       │   ├── body.scss
+    │   │       │   ├── headings.scss
+    │   │       │   └── para.scss
+    │   │       └── pages
+    │   │           ├── about.scss
+    │   │           ├── tools.scss
+    │   │           └── welcome.scss
+    │   └── vendor
+    ├── css
+    │   ├── styles.css
+    │   └── styles.css.map
+    ├── docs
+    │   ├── LICENSE.txt
+    │   └── README.txt
+    ├── home
+    │   ├── about
+    │   │   ├── faq.html
+    │   │   └── index.html
+    │   ├── tools
+    │   │   ├── index.html
+    │   │   └── showcase.html
+    │   └── welcome
+    │       └── index.html
+    ├── index.html
+    └── package.json
 
 
 
