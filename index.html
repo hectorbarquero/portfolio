@@ -41,33 +41,43 @@
             <header id="header">
                     <h1 class="welcome-header">Welcome.</h1>
             </header>
-            <p>Please wait...</p>
+            <p>Loading...</p>
             </div>
 
             <!-- barquerohr: I will use a framework, add to ../vendor/ and use here -->
             <!-- user should go to ../Main/Welcome/...-->
 
-            <div class="loader">
-                <svg viewBox="0 0 80 80">
-                    <circle id="test" cx="40" cy="40" r="32"></circle>
-                </svg>
-            </div>
-            
-            <div class="loader triangle">
-                <svg viewBox="0 0 86 80">
-                    <polygon points="43 8 79 72 7 72"></polygon>
-                </svg>
-            </div>
-            
-            <div class="loader">
-                <svg viewBox="0 0 80 80">
-                    <rect x="8" y="8" width="64" height="64"></rect>
-                </svg>
-            </div>
-            
-            <!-- dribbble -->
-            <a class="dribbble" href="https://dribbble.com/shots/5878367-Loaders" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
-
+            <div class="loaders-container">
+                <div class="loader">
+                    <div class="skull-loader">
+                        <img src="assets/images/image-skull1-loader.svg" alt="Skull Loader">
+                        <svg class="skull-svg" viewBox="0 0 80 80">
+                            <path id="skull-path-1" class="skull-path" d="M40,10 C55,10 65,25 65,40 C65,55 55,70 40,70 C25,70 15,55 15,40 C15,25 25,10 40,10 Z"></path>
+                        </svg>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                
+                <div class="loader">
+                    <div class="skull-loader">
+                        <img src="assets/images/image-skull2-loader.svg" alt="Skull Loader">
+                        <svg class="skull-svg" viewBox="0 0 80 80">
+                            <path id="skull-path-2" class="skull-path" d="M40,10 C55,10 65,25 65,40 C65,55 55,70 40,70 C25,70 15,55 15,40 C15,25 25,10 40,10 Z"></path>
+                        </svg>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                
+                <div class="loader">
+                    <div class="skull-loader">
+                        <img src="assets/images/image-skull3-loader.svg" alt="Skull Loader">
+                        <svg class="skull-svg" viewBox="0 0 80 80">
+                            <path id="skull-path-3" class="skull-path" d="M40,10 C55,10 65,25 65,40 C65,55 55,70 40,70 C25,70 15,55 15,40 C15,25 25,10 40,10 Z"></path>
+                        </svg>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>                                                  
         </section>
     </main>
     </div>

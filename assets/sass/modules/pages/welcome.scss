@@ -1,97 +1,68 @@
-/* Reset default margin and padding */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-/* Flexbox to center content */
-#main-content {
+.loaders-container {
     display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center; /* Vertical center */
-    min-height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    gap: 16px;
 }
 
-/* Ensure text inside centered-content is centered horizontally */
-.centered-content {
-    text-align: center;
-    margin-top: 20px; 
-}
-
-/* Style adjustments for welcome-header */
-.welcome-header {
-    margin-bottom: 20px;
-}
-
-/* Keyframes for animations */
-
-@keyframes pathTriangle {
-    33% {
-        stroke-dashoffset: 74;
+.loader {
+    --path: #C9CAC9;
+    --dot: #f2f3f2;
+    --duration: 3s;
+    width: 60px; 
+    height: 60px; 
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    
+    &:not(:last-child) {
+        margin-right: 16px;
     }
-    66% {
-        stroke-dashoffset: 147;
+
+    .skull-svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%; 
+        height: auto;
+    }
+
+    .skull-path {
+        fill: none;
+        stroke: var(--path);
+        stroke-width: 10px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        stroke-dasharray: 0 1;
+        stroke-dashoffset: 0;
+        animation: pathSkull var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+}
+
+@keyframes pathSkull {
+    0% {
+        stroke-dasharray: 0 1;
     }
     100% {
-        stroke-dashoffset: 221;
+        stroke-dasharray: 200 200;
     }
 }
 
-@keyframes dotTriangle {
-    33% {
-        transform: translate(0, 0);
-    }
-    66% {
-        transform: translate(10px, -18px);
-    }
-    100% {
-        transform: translate(-10px, -18px);
-    }
+html {
+    -webkit-font-smoothing: antialiased;
 }
 
-@keyframes pathRect {
-    25% {
-        stroke-dashoffset: 64;
-    }
-    50% {
-        stroke-dashoffset: 128;
-    }
-    75% {
-        stroke-dashoffset: 192;
-    }
-    100% {
-        stroke-dashoffset: 256;
-    }
-}
-
-@keyframes dotRect {
-    25% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(18px, -18px);
-    }
-    75% {
-        transform: translate(0, -36px);
-    }
-    100% {
-        transform: translate(-18px, -18px);
-    }
-}
-
-@keyframes pathCircle {
-    25% {
-        stroke-dashoffset: 125;
-    }
-    50% {
-        stroke-dashoffset: 175;
-    }
-    75% {
-        stroke-dashoffset: 225;
-    }
-    100% {
-        stroke-dashoffset: 275;
+* {
+    box-sizing: border-box;
+    &:before,
+    &:after {
+        box-sizing: border-box;
     }
 }
