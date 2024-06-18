@@ -21,7 +21,7 @@
   font-weight: 700;
   text-align: center;
   margin: 20px 0;
-  color: #222222;
+  color: #06141B;
 }
 
 .ctrt-heading {
@@ -29,7 +29,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 10px 0;
-  color: #2F3545;
+  color: #11212D;
 }
 
 .third-indent-heading {
@@ -37,15 +37,15 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin: 5px 0 15px 20px;
-  color: #2F3545;
+  color: #253745;
 }
 
 body {
-  background: #f5f5f5;
-  background: -webkit-linear-gradient(top, #f5f5f5, #dcdcdc);
-  background: -o-linear-gradient(top, #f5f5f5, #dcdcdc);
-  background: -moz-linear-gradient(top, #f5f5f5, #dcdcdc);
-  background: linear-gradient(to bottom, #f5f5f5, #dcdcdc);
+  background: #9BA8AB;
+  background: -webkit-linear-gradient(top, #9BA8AB, #CCD0CF);
+  background: -o-linear-gradient(top, #9BA8AB, #CCD0CF);
+  background: -moz-linear-gradient(top, #9BA8AB, #CCD0CF);
+  background: linear-gradient(to bottom, #9BA8AB, #CCD0CF);
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -63,7 +63,7 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   margin: 10px 0;
-  color: #2F3545;
+  color: #253745;
 }
 
 /* everything for the navbar is here, which is used on pretty much every page */
@@ -108,7 +108,7 @@ p {
   font-size: 0.875rem;
   border: none;
   border-radius: 8px;
-  background-color: #007bff;
+  background-color: #1E536E;
   color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -116,7 +116,7 @@ p {
 
 .navbar input[type=text]:hover,
 .navbar input[type=text]:focus {
-  border-color: #007bff;
+  border-color: #1E536E;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
   width: 240px;
 }
@@ -156,8 +156,8 @@ p {
 }
 
 .loader {
-  --path: #C9CAC9;
-  --dot: #f2f3f2;
+  --path: #11212D;
+  --dot: #1E536E;
   --duration: 3s;
   width: 60px;
   height: 60px;
@@ -225,7 +225,6 @@ html {
   align-items: center;
   justify-content: center;
   padding: 4rem;
-  background-color: #222222;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -238,7 +237,6 @@ html {
   flex: 1;
   overflow-y: auto;
   padding: 4rem;
-  /* calc left pane*/
   margin-left: 33.3333333333vw;
   background-color: transparent;
 }
@@ -252,30 +250,25 @@ html {
   border-radius: 8px;
   text-align: center;
 }
-
 .content p {
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   line-height: 1.6;
   margin: 1rem 0;
-  color: #ffffff;
 }
 
 .welcome-header,
 .ctrt-heading,
 .third-indent-heading {
-  color: #ffffff;
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
 .welcome-header {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .ctrt-heading {
-  font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
 
@@ -295,33 +288,30 @@ form {
   flex-direction: column;
   align-items: center;
 }
-
-label {
+form label {
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
-
-input[type=email] {
+form input[type=email] {
   padding: 0.5rem;
   font-size: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
-button {
+form button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #1E536E;
   color: white;
   cursor: pointer;
 }
-button:hover {
+form button:hover {
   background-color: #0056b3;
 }
-button .button-highlight {
+form button .button-highlight {
   font-weight: bold;
 }
 
@@ -333,21 +323,19 @@ button .button-highlight {
   margin-top: auto;
   font-size: 0.65rem;
 }
-
-.footer-item {
+.footer-links .footer-item {
   margin: 0 0.25rem;
 }
-
-.footer-link {
+.footer-links .footer-link {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #333;
 }
-.footer-link:hover {
-  color: #007bff;
+.footer-links .footer-link:hover {
+  color: #1E536E;
 }
-.footer-link img {
+.footer-links .footer-link img {
   margin-right: 0.25rem;
 }
 
@@ -356,6 +344,127 @@ footer p {
   margin-top: 0.25rem;
   color: #666;
   text-align: center;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.carousel .carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel .carousel-wrapper .carousel-items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.carousel .carousel-wrapper .carousel-items .carousel-item {
+  min-width: 100px; /* Minimum width to prevent collapsing */
+  flex: 1;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative; /* Ensure relative positioning for child elements */
+  /* Optional hover effect */
+}
+.carousel .carousel-wrapper .carousel-items .carousel-item h3 {
+  margin-top: 0;
+}
+.carousel .carousel-wrapper .carousel-items .carousel-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+.carousel .carousel-wrapper .carousel-items .carousel-item img {
+  max-width: 100%; /* Ensures image doesn't exceed its container */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 100px; /* Limit maximum height */
+  filter: grayscale(100%); /* Applies grayscale effect */
+  transition: filter 0.3s ease; /* Smooth transition for filter changes */
+}
+.carousel .carousel-wrapper .carousel-items .carousel-item:hover img {
+  filter: grayscale(0%); /* Reverts grayscale on hover */
+}
+.carousel .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1E536E;
+}
+.carousel .carousel-control.prev {
+  left: 10px;
+}
+.carousel .carousel-control.next {
+  right: 10px;
+}
+.carousel .carousel-control:hover {
+  color: #0056b3;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+.subscribe-form form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.subscribe-form form .form-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.subscribe-form form .form-input label {
+  font-size: 0.875rem;
+  color: #222;
+}
+.subscribe-form form .form-input input[type=email] {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #222;
+  width: 200px;
+  box-sizing: border-box;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: auto;
+  min-height: 2rem;
+}
+.subscribe-form form .form-input input[type=email]:hover, .subscribe-form form .form-input input[type=email]:focus {
+  border-color: #1E536E;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  width: 240px;
+}
+.subscribe-form form .form-input button[type=submit] {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1E536E;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.subscribe-form form .form-input button[type=submit]:hover {
+  background-color: #0056b3;
+}
+.subscribe-form form .form-input button[type=submit] .button-highlight {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

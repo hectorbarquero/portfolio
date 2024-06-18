@@ -37,18 +37,21 @@
     <div class="container">
         <div class="left-pane" role="complementary">
             <div class="content">
-                <h1 class="welcome-header">Technically a writer</h1>
+                <h1 class="welcome-header">Test</h1>
                 <h2 class="ctrt-heading">Open-source publishing tools</h2>
                 <h2 class="ctrt-heading"><span class="font-highlight">For technical writers, by technical writers</span></h2>
                 <p>
-                    I'm a technical writer by day, programmer by night. Use my tools to increase your productivity, or browse this site to see what I'm up to. If you're making a product and publishing data or documentation, these tools are for you. I support common business tools and try to save you time and money. Use my tools to gain a competitive edge. You're probably already using the technology they build on. Find what works for you, plug it in, and beat your competitors to or on the market. Today's product is documentation, and my tools help you make that.
+                    I'm a technical writer by day, programmer by night. Use my tools to increase your productivity. I support common business tools that you're probably currently using. Find what works for you, and plug it in. I even left some docs to help you get started. I'm always looking to connect-- so find me on LinkedIn.
                 </p>
                 <!-- I'm going to revamp this with AWS lambda, an API gateway, and SES in unit 4-7-->
-                <form action="mailto:hectorbarquero@hotmail.com" method="post" enctype="text/plain">
-                    <label for="email">Enter your email to subscribe to RSS feed:</label>
-                    <input type="email" id="email" name="email" required>
-                    <button type="submit"><span class="button-highlight">Get updates</span></button>
-                </form>
+                <div class="subscribe-form">
+                    <form action="mailto:hectorbarquero@hotmail.com" method="post" enctype="text/plain">
+                        <div class="form-input">
+                            <input type="email" id="email" name="email" placeholder="Enter email" required>
+                            <button type="submit"><span class="button-highlight">Get updates</span></button>
+                        </div>
+                    </form>
+                </div>     
                 <footer id="contact-footer" role="contentinfo">
                     <ul class="footer-links">
                         <li class="footer-item">
@@ -100,22 +103,29 @@
                         <button type="button" aria-label="Search button"><span>Go</span></button>
                     </div>
                 </div>
-                <section id="testimonials" aria-labelledby="testimonials-heading">
-                    <h2 class="ctrt-heading">What our users say</h2>
-                    <ul>
-                        <li>
-                            <h3 class="third-indent-heading">John Doe</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        </li>
-                        <li>
-                            <h3 class="third-indent-heading">Jane Smith</h3>
-                            <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-                        </li>
-                        <li>
-                            <h3 class="third-indent-heading">Marco Polo</h3>
-                            <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                        </li>
-                    </ul>
+                <section id="testimonials" aria-labelledby="testimonials-heading" class="carousel">
+                    <h2 class="ctrt-heading">Companies I've helped</h2>
+                    <div class="carousel-wrapper">
+                        <ul class="carousel-items">
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/caf-icon.png" alt="armed forces logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/gd-icon.png" alt="general dynamics logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/tssa-icon.jpg" alt="nintendo logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/factory-icon.jpg" alt="nintendo logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/nintendo-icon.png" alt="nintendo logo" loading="lazy">
+                            </li>
+                        </ul>
+                        <button class="carousel-control prev" aria-label="Previous">‹</button>
+                        <button class="carousel-control next" aria-label="Next">›</button>
+                    </div>
                 </section>
             <div class="timeline">
                 <section id="news-posts" aria-labelledby="news-posts">
@@ -128,5 +138,7 @@
             </div>
         </main>
     </div>
+
+    <script src="../../assets/js/testimonials.js"></script>
 </body>
 </html>
