@@ -107,41 +107,6 @@ form {
     }
 }
 
-.footer-links {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    list-style: none;
-    margin-top: auto;
-    font-size: 0.65rem;
-
-    .footer-item {
-        margin: 0 0.25rem;
-    }
-
-    .footer-link {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: #333;
-
-        &:hover {
-            color: #1E536E;
-        }
-
-        img {
-            margin-right: 0.25rem;
-        }
-    }
-}
-
-footer p {
-    font-size: 0.6rem;
-    margin-top: 0.25rem;
-    color: #666;
-    text-align: center;
-}
-
 .carousel {
     position: relative;
     overflow: hidden;
@@ -161,7 +126,7 @@ footer p {
             width: 100%;
 
             .carousel-item {
-                min-width: 100px; /* Minimum width to prevent collapsing */
+                min-width: 100px;
                 flex: 1;
                 padding: 0.5rem;
                 box-sizing: border-box;
@@ -169,7 +134,7 @@ footer p {
                 background-color: #f9f9f9;
                 border: 1px solid #ddd;
                 border-radius: 8px;
-                position: relative; /* Ensure relative positioning for child elements */
+                position: relative;
 
                 h3 {
                     margin-top: 0;
@@ -182,16 +147,16 @@ footer p {
                 }
                 
                 img {
-                    max-width: 100%; /* Ensures image doesn't exceed its container */
-                    height: auto; /* Maintains aspect ratio */
-                    max-height: 100px; /* Limit maximum height */
-                    filter: grayscale(100%); /* Applies grayscale effect */
-                    transition: filter 0.3s ease; /* Smooth transition for filter changes */
+                    max-width: 100%;
+                    height: auto;
+                    max-height: 100px;
+                    filter: grayscale(100%);
+                    transition: filter 0.3s ease;
                 }
                 
-                /* Optional hover effect */
+                /* i left this here bc i might come back - use this to add hover grayscalle/color again */
                 &:hover img {
-                    filter: grayscale(0%); /* Reverts grayscale on hover */
+                    filter: grayscale(0%);
                 }
             }
         }
@@ -217,68 +182,6 @@ footer p {
 
         &:hover {
             color: #0056b3;
-        }
-    }
-}
-
-.subscribe-form {
-    display: flex;
-    align-items: center;
-
-    form {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-
-        .form-input {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-
-            label {
-                font-size: 0.875rem;
-                color: #222;
-            }
-
-            input[type="email"] {
-                padding: 0.5rem;
-                font-size: 0.875rem;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                background-color: #fff;
-                color: #222;
-                width: 200px;
-                box-sizing: border-box;
-                transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                height: auto;
-                min-height: 2rem;
-
-                &:hover,
-                &:focus {
-                    border-color: #1E536E;
-                    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-                    width: 240px;
-                }
-            }
-
-            button[type="submit"] {
-                padding: 0.5rem 1rem;
-                font-size: 0.875rem;
-                border: none;
-                border-radius: 8px;
-                background-color: #1E536E;
-                color: #ffffff;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-
-                &:hover {
-                    background-color: #0056b3;
-                }
-
-                .button-highlight {
-                    font-weight: bold;
-                }
-            }
         }
     }
 }

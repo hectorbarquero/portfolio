@@ -1,0 +1,72 @@
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        max-width: 300px;
+
+        .form-input {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            label {
+                font-size: 0.875rem;
+                color: #222;
+            }
+
+            input[type="email"] {
+                padding: 0.5rem;
+                font-size: 0.875rem;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: #fff;
+                color: #222;
+                /* set this to change the initial width. I made it small for now bc debugging nightmares */
+                width: 120px;
+                box-sizing: border-box;
+                transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                height: 2rem;
+                min-height: 2rem;
+
+                &:hover,
+                &:focus {
+                    border-color: #1E536E;
+                    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+                    width: 240px;
+                }
+            }
+
+            button[type="submit"] {
+                padding: 0.5rem 1rem;
+                font-size: 0.875rem;
+                border: none;
+                border-radius: 8px;
+                background-color: #1E536E;
+                color: #ffffff;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                height: 2rem;
+                min-height: 2rem;
+                align-self: baseline;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+
+                .button-highlight {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
