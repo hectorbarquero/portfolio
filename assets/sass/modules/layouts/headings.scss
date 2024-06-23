@@ -25,3 +25,22 @@
     margin: 5px 0 15px 20px;
     color: #253745;
 }
+
+/* added to manage the news posts and general body text left-aligned, otherwise same*/
+.post-ctrt-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #11212D;
+    text-align: left;
+    margin-bottom: .75rem;
+}
+
+.post-third-indent-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #253745;
+    text-align: left;
+    margin-bottom: .75rem;
+}

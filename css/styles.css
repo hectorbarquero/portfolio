@@ -40,6 +40,25 @@
   color: #253745;
 }
 
+/* added to manage the news posts and general body text left-aligned, otherwise same*/
+.post-ctrt-heading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #11212D;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+.post-third-indent-heading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #253745;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
 body {
   background: #9BA8AB;
   background: -webkit-linear-gradient(top, #9BA8AB, #CCD0CF);
@@ -355,7 +374,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
+  padding: 13rem;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -382,6 +401,22 @@ html {
   text-align: center;
 }
 .content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+/*  needs justified-para in specificity */
+.timeline {
+  max-width: 600px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  background-color: transparent;
+  border-radius: 8px;
+  text-align: center;
+}
+.timeline p {
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   line-height: 1.6;
@@ -418,6 +453,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* need to come back here to debug the sticky position of button - it should be further left/right but i need to resolve the right-pane first*/
 }
 form label {
   margin-bottom: 0.5rem;
@@ -470,10 +506,11 @@ form button .button-highlight {
   padding: 0.5rem;
   box-sizing: border-box;
   text-align: center;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  border: none;
   border-radius: 8px;
   position: relative;
+  align-content: center;
   /* i left this here bc i might come back - use this to add hover grayscalle/color again */
 }
 .carousel .carousel-wrapper .carousel-items .carousel-item h3 {

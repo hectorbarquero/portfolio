@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.carousel-control.next');
     let currentIndex = 0;
     let intervalId = null;
-    // int time = the rate of n, and transition to adjust the time from a to b
+    // time to move = the rate of n, and transition to adjust the time from a to b
     const intervalTime = 1500; 
     const transitionDuration = 3000; 
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startCarousel(); 
     });
 
-    // reset start of transition, else it breaks
+    // reset start of transition, else break
     startCarousel();
 
     // bonus-- will i need this later? maybe GSAP has a library...
