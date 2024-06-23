@@ -149,11 +149,35 @@
                 </section>
             <div class="timeline">
                 <section id="news-posts" aria-labelledby="news-posts">
-                    <h2 class="post-ctrt-heading">The most recent post</h2>
-                    <p class="justified-para">There's nothing to see here yet. I think I need to add my content in showcase.html first.</p>
-                    <h3 class="post-third-indent-heading">What's it do?</h3>
-                    <p class="justified-para">This text would be describing what happened above. It would be grabbing information from showcase-short.html as well and presenting it in a bullet list.</p>
-                    <!-- Timeline content will be added here - once I get the tools.html done, I can use an iFrame -->
+                    <h2 class="post-ctrt-heading">My XML pre-processor</h2>
+                    <p class="justified-para">I wrote this tool to help a technical writer who was trying to change .xml id tagsets to a placeholder value, but wanted to leave all other document tags unchanged.</p>
+
+                    <p class="justified-para">
+                    My program is lightweight. Try it out.</p>
+                    <img src="../../assets/images/tool-problem-1.gif" width="600px" alt="xml tool problem demo" id="styled-gif-id" loop>
+                    &nbsp;   
+                    <h3 class="post-third-indent-heading">1. Start with a source.xml file</h3>
+                    <p class="justified-para">Use your own .xml file, or see how it works with my demo file. If you use your own, just rename it to source.xml for the program to work. My program will reject any file type without an .xml extension, and throw an error.</p>
+                    &nbsp;    
+                    <img src="../../assets/images/tool-dependencies-2.gif" width="600px" alt="xml tool pre proc demo" id="styled-gif-id" loop>
+                    &nbsp;
+                    <h3 class="post-third-indent-heading">2. Use node.js</h3>
+                    <p class="justified-para">I said it was light weight, and it is. &#127939;</p>
+                    <p class="justified-para">My program runs from terminal, but you need node.js to run it. Check your version to see if you have it, or<a href="https://nodejs.org/en/download/package-manager" target="_blank" rel="noopener"> download it here</a>.</p>
+                    &nbsp;
+                    <img src="../../assets/images/tool-preproc-3.gif" width="600px" alt="xml tool post proc demo" id="styled-gif-id" loop>
+                    &nbsp;
+                    <h3 class="post-third-indent-heading">3. Run the program to target id tags</h3>
+                    <p class="justified-para">node preProcXML.js</p>
+                    <p class="justified-para">That's it. That's all it takes to run my program. You'll see a success prompt and you can take a look at the output. By default, every valid xml tag is ignored and my regex switches the id tag to a placeholder value of @@</p>
+                    <p class="justified-para">You can change this to suit your needs, but most technical writers will be able to take this output and manipulate it further, doing things like localizing, sanitizing, or batch changes.</p>
+                    &nbsp;
+                    <img src="../../assets/images/tool-postproc-4.gif" width="600px" alt="xml tool post proc demo" id="styled-gif-id" loop>
+                    &nbsp;
+                    <h3 class="post-third-indent-heading">4. Restore the .xml</h3>
+                    <p class="justified-para">After you've manipulated the output, you may want to put humpty dumpty back together again.</p>
+                    <p class="justified-para">node postprocXML.js</p>
+                    <p class="justified-para">That generates a file called finalXML.xml, which really is the same as the source.xml we start with. Don't trust it? I don't blame you. For sanity, I coded a feature that checks.</p>
                 </section>
             </div>
         </main>
