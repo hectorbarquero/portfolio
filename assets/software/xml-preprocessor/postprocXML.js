@@ -1,3 +1,5 @@
+// barquerohr: this program reverts processedSource.xml to regular xml by replacing the placeholder symbols with tagsets. It runs a check after to see if output = input
+
 const fs = require('fs');
 const path = require('path');
 const diff = require('diff');

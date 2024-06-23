@@ -407,7 +407,6 @@ html {
   margin: 1rem 0;
 }
 
-/*  needs justified-para in specificity */
 .timeline {
   max-width: 600px;
   padding: 1.5rem;
@@ -549,6 +548,16 @@ form button .button-highlight {
 }
 .carousel .carousel-control:hover {
   color: #0056b3;
+}
+
+#styled-gif-id {
+  border-radius: 45px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-video {
+  border-radius: 45px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=styles.css.map */

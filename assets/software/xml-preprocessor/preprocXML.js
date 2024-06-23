@@ -1,3 +1,6 @@
+/* barquerohr: this program converts source.xml to more readable text, which is necessary for some docs as code tools like ssg's, where the tagsets would be interpreted and throw errors. modify the placeholder symbol to suit your needs. you can manipulate these more outside of this program, but need to return them to run postprocXML.js which is the sister program, and reverts the processed to source.xml
+*/
+
 const fs = require('fs');
 const path = require('path');
 
@@ -5,7 +8,15 @@ const sourceFile = 'source.xml';
 const outputFile = 'processedSource.xml';
 
 function preprocessXML(content) {
-    return content.replace(/<variable id='([^']+)'>/g, '@@variable id=\'$1\'@@');
+    // find <?? id> in source.xml
+    const openingTagRegex = /<(\w+)[^>]*\bid=['"]([^'"]+)['"][^>]*>/g;
+    const closingTagRegex = /<\/(\w+)>/g;
+
+    // replace with @@ so writer can manipulate it with ctrl+f or regex. Use postprocXML to return to normal xml
+    content = content.replace(openingTagRegex, '@@$1 id=\'$2\'@@');
+    content = content.replace(closingTagRegex, '@@/$1@@');
+
+    return content;
 }
 
 function showError(message, isRed = true) {

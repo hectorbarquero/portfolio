@@ -1,30 +1,30 @@
 <carInformation>
-    <title>Car Product Information</title>
+    <title>An example of product information</title>
     <content>
         <paragraph>
-            Welcome to the product information page for our latest car model, the XYZ-5000.
-            This state-of-the-art vehicle is designed for performance and comfort.
-            Please handle product <variable id='12363211'> with care.
+            This is where you'd have text from your document, but it might be cluttered with tags that you want to clean up automatically. For example, "...learn more about <variable id='XYZ-5000'> on our official product information page.
+
+            <variable id='XYZ-5000'> was designed for performance and comfort, but requires specific maintenance."
+
+            "Maintain <variable id='XYZ-5000'> with <variable id='high quality oil'>."
+
+            You can see I wrapped information inside of tagsets. This is common with many output files from PIM, CRM, and DITA tools. Lets clean these up.
         </paragraph>
         <paragraph>
-            The XYZ-5000 comes equipped with a powerful engine, advanced safety features, and a luxurious interior.
-            It is perfect for those who seek an unparalleled driving experience.
+            The <variable id='XYZ-5000'>, similar to the <variable id='XYZ-123'>, comes with an official <variable id='maintenace kit'>. Use the <variable id='maintenace kit'> to perform scheduled service. 
+
+            Learn more about your scheduled service in the official <variable id='product-manual'>
         </paragraph>
         <paragraph>
-            <variable id='12363211'> represents a unique identifier for certain components of the car. It is crucial to
-            ensure the proper functioning of these components to maintain the overall performance and safety of the vehicle.
-            </variable>
-        </paragraph>
-        <paragraph>
-            Explore the following sections for detailed specifications and features of the XYZ-5000.
+            To run my program, rename your source file source.xml and use the command line. Run the following command node preprocXML.js, then view the output of processedSource.xml. Execute node postprocXML.js.
         </paragraph>
     </content>
     <specifications>
-        <engine>4.0L V8 Twin Turbo</engine>
+        <engine>4.0L V8 twin turbo</engine>
         <safetyFeatures>
             <airbags>Front, side, and curtain airbags</airbags>
             <collisionWarningSystem>Advanced collision warning system</collisionWarningSystem>
         </safetyFeatures>
-        <interior>Luxurious leather seats, advanced infotainment system</interior>
+        <interior>lorem ipsum</interior>
     </specifications>
 </carInformation>
