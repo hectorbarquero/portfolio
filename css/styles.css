@@ -95,6 +95,16 @@ p {
   line-height: 1.6;
 }
 
+.font-highlight {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  background: linear-gradient(45deg, #1E3A5F, #3A8FCB, #5AA9E6, #1E536E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -328,11 +338,12 @@ p {
 }
 
 .modern-table th {
-  background-color: #f2f2f2;
-  color: #333;
+  background: linear-gradient(45deg, #1E3A5F, #3A8FCB, #5AA9E6, #1E536E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff; /* Fallback for older browsers */
 }
 
-/* added alternating bg color */
 .modern-table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
