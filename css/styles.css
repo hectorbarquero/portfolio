@@ -61,12 +61,13 @@
   margin-bottom: 0.75rem;
 }
 
+/*$light-grey-start: #9BA8AB;*/
 body {
-  background: #9BA8AB;
-  background: -webkit-linear-gradient(top, #9BA8AB, #CCD0CF);
-  background: -o-linear-gradient(top, #9BA8AB, #CCD0CF);
-  background: -moz-linear-gradient(top, #9BA8AB, #CCD0CF);
-  background: linear-gradient(to bottom, #9BA8AB, #CCD0CF);
+  background: #CCD0CF;
+  background: -webkit-linear-gradient(top, #CCD0CF, #f1f1f1);
+  background: -o-linear-gradient(top, #CCD0CF, #f1f1f1);
+  background: -moz-linear-gradient(top, #CCD0CF, #f1f1f1);
+  background: linear-gradient(to bottom, #CCD0CF, #f1f1f1);
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -178,7 +179,7 @@ p {
 }
 
 .navbar a {
-  color: #ffffff;
+  color: #CCD0CF;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
@@ -187,7 +188,7 @@ p {
 }
 
 .navbar a:hover {
-  color: #0056b3;
+  color: #ffffff;
 }
 
 .subscribe-form {

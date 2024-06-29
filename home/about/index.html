@@ -26,70 +26,72 @@
     <!-- I'll add a manifest later-->
     <link rel="manifest" href="../../assets/vendor/site.webmanifest">
     
+    <link rel="stylesheet" href="../../css/styles.css">
     <!-- add hydration later -->
     <!-- leave dns pre-fetch domain wide -->
     <!-- need to resolve my domain first, so consider my name a placeholder for now-->
     <link rel="dns-prefetch" href="//hectorbarquero.com">
 </head>
 <body>
-    <header>
-        <h1 class="welcome-header">Information about this project</h1>
-    </header>
-    <div class="navbar" role="navigation">
-        <div class="nav-search">
-            <ul>
-                <li><a href="../welcome/index.html">Welcome</a></li>
-                <li>
-                    <a href="../tools/index.html">Tools</a></li>
-                <li><a href="../about/index.html">About</a>
-            </ul>
-            <input type="text" id="search-input" placeholder="Search" aria-label="Search">
-            <button type="button" aria-label="Search button"><span>Go</span></button>
+    <div class="container">
+        <div class="left-pane" role="complementary">
+            <div class="content">
+                <h1 class="welcome-header">About</h1>
+                <p class="justified-para">
+                    I made this for the technical writing community, but it also helps to show my portfolio, which is always evolving. You can use my website to grab some tools that might be of interest to you, learn about some interesting publishing tools, find style guides, or check out my portfolio to see what I am up to.
+                </p>
+                <footer id="contact-footer" role="contentinfo">
+                    <ul class="footer-links">
+                        <li class="footer-item">
+                            <!-- reddit -->
+                            <a href="https://www.reddit.com/r/technicalwriting/" aria-label="Reddit" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/reddit-icon.png" alt="Reddit Icon" width="45" height="45" loading="lazy">
+                            </a>
+                        </li>
+                        <!-- linkedin -->
+                        <li class="footer-item">
+                            <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/linkedin-icon.png" alt="LinkedIn Icon" width="48" height="48" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <!-- github -->
+                            <a href="https://github.com/hectorbarquero" aria-label="GitHub" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/github-icon.png" alt="GitHub Icon" width="41" height="41" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <!-- open src license GNU -->
+                            <a href="../../docs/LICENSE.txt" aria-label="GNU License Compliance Document" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/gnu-public-license-icon.png" alt="GNU License Icon" width="45" height="45" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer-caption">Hector Barquero, &copy; 2024</p>
+                </footer>
+            </div>
+        </div>
+        <main class="right-pane" role="main">
+            <div class="navbar" role="navigation">
+                <div class="nav-search">
+                    <ul>
+                        <li><a href="../welcome/index.html">Welcome</a></li>
+                        <li><a href="../tools/index.html">Tools</a></li>
+                        <li><a href="../about/index.html">About</a></li>
+                    </ul>
+                    <input type="text" id="search-input" placeholder="Search" aria-label="Search">
+                    <button type="button" aria-label="Search button"><span>Go</span></button>
+                </div>
+            </div>
+            <div class="timeline">
+                <h2 class="post-ctrt-heading">Learn about this project</h2>
+                <p class="justified-para"> This project was made to help technical writers publish documentation, usually in bulk, or perform related functions in the presentation of technical data. It's not just meant for technical writers, but managers, product managers, sales engineers, marketing professionals, and more. Use <span class="font-highlight"> the changelog</span> to see what's new. Connect with me on <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn"> LinkedIn</a> or learn more about this project in the FAQ.</p>
+                <h2 class="post-ctrt-heading">FAQ</h2>
+                <p class="justified-para">Answers to frequently asked questions.</p>
+                <h2 class="post-ctrt-heading">Changelog</h2>
+                <p class="justified-para">Check out the change log.</p>
+            </div>
+        </main>
     </div>
-    <main>
-        <h2 class="ctrt-heading">Learn about this project</h2>
-        <p> This project was made to help technical writers publish documentation, usually in bulk, or perform related functions in the presentation of technical data. It's not just meant for technical writers, but managers, product managers, sales engineers, marketing professionals, and more. Use <span class="font-highlight"> the changelog</span> to see what's new. Connect with me on <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn"> LinkedIn</a> or learn more about this project in the FAQ.</p>
-
-        <section aria-labelledby="welcome-header">
-            <p>About this project</p>
-            <section id="changelog-section" aria-labelledby="changelog-heading">
-                <h2 class="ctrt-heading">Changelog</h2>
-                <!-- I have a json here for now, but it will need to populate by a script here in unit 4 to render. Json dumps from GitHub or server-->
-                <a href="../assets/js/changelog.json" aria-label="Project Changelog">View the project changelog.</a>
-            </section>
-            <section id="faq-section" aria-labelledby="ctrt-heading">
-                <h2 class="ctrt-heading">FAQ</h2>
-            </section>
-        </section>
-    </main>
-    <footer id="contact-footer" role="contentinfo">
-        <ul class="footer-links">
-            <li class="footer-item">
-                <a href="https://www.reddit.com/r/technicalwriting/" aria-label="Reddit" class="footer-link">
-                    <img src="../../assets/icons/reddit-icon.png" alt="Reddit Icon" width="24" height="24" loading="lazy">
-                    Reddit
-                </a>
-            </li>
-            <li class="footer-item">
-                <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn" class="footer-link">
-                    <img src="../../assets/icons/linkedin-icon.jpg" alt="LinkedIn Icon" width="24" height="24" loading="lazy">
-                    LinkedIn
-                </a>
-            </li>
-            <li class="footer-item">
-                <a href="https://github.com/hectorbarquero" aria-label="GitHub" class="footer-link">
-                    <img src="../../assets/icons/github-icon.png" alt="GitHub Icon" width="24" height="24" loading="lazy">
-                    GitHub
-                </a>
-            </li>
-            <li class="footer-item">
-                <a href="../../docs/LICENSE.txt" aria-label="GNU License Compliance Document" class="footer-link">
-                    <img src="../../assets/icons/gnu-public-license-icon.png" alt="GNU License Icon" width="24" height="24" loading="lazy">
-                    Compliance
-                </a>
-            </li>
-        </ul>
-        <p>Brought to you by Hector Barquero, &copy; 2024</p>
-    </footer> 
 </body>
 </html>

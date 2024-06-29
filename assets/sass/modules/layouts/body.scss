@@ -1,5 +1,6 @@
-$light-grey-start: #9BA8AB;
-$light-grey-end: #CCD0CF;
+/*$light-grey-start: #9BA8AB;*/
+$light-grey-start: #CCD0CF;
+$light-grey-end: #f1f1f1;
 
 @mixin gradient-background($start-color, $end-color) {
     background: $start-color;
