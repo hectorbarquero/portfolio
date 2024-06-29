@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*reset*/
 /*this is my reset style sheet, standards by Tantek Çelik, part of the Yahoo User Interface Library (YUI). I'm going to normalize formatting to remove browser styles.*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap");
@@ -14,6 +15,7 @@
   padding: 0px 20px;
 }
 
+/*module sass > css*/
 /* h1, h2, h3 */
 .welcome-header {
   font-family: "Orbitron", sans-serif;
@@ -92,14 +94,15 @@ p {
   line-height: 1.6;
 }
 
-/* everything for the navbar is here, which is used on pretty much every page */
 .navbar {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
-  background-color: transparent;
-  color: #222222;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Example gradient */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #ffffff;
   z-index: 1000;
   padding: 0.5rem 1rem;
   display: flex;
@@ -123,7 +126,6 @@ p {
   color: #222;
   width: 120px;
   box-sizing: border-box;
-  /* i'm using this to manage the input transition, but i don't know if it'll play nice with js later */
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   height: auto;
   min-height: 2rem;
@@ -173,6 +175,19 @@ p {
 
 .navbar ul li:hover > ul {
   display: block;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
 }
 
 .subscribe-form {
@@ -299,6 +314,7 @@ p {
   justify-content: center;
 }
 
+/*page sass > css*/
 .loaders-container {
   display: flex;
   justify-content: center;

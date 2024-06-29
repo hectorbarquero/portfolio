@@ -18,14 +18,15 @@
     <meta property="og:url" content="http://hectorbarquero.com/home/tools/index.html">
     <meta property="og:image" content="http://hectorbarquero.com/assets/images/og-image.png">
     
- <!-- following w3 and mdn, using a generic apple favicon for placeholder as i have no logo-->
- <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
- <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
- <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
- <!-- I'll add a manifest later-->
- <link rel="manifest" href="../../assets/vendor/site.webmanifest">
+    <!-- following w3 and mdn, using a generic apple favicon for placeholder as I have no logo-->
+    <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <!-- I'll add a manifest later-->
+    <link rel="manifest" href="../../assets/vendor/site.webmanifest">
     
+    <link rel="stylesheet" href="../../css/styles.css">   
     <!-- add hydration later -->
     <!-- leave dns pre-fetch domain wide -->
     <!-- need to resolve my domain first, so consider my name a placeholder for now-->
@@ -36,227 +37,76 @@
     <div class="container">
         <div class="left-pane" role="complementary">
             <div class="content">
-                <h1 class="welcome-header">Tools</h1>
-                <h2 class="ctrt-heading">Open-source publishing tools</h2>
-                <h2 class="ctrt-heading"><span class="font-highlight">For technical writers, by technical writers</span></h2>
-                <p>
-                    I'm a technical writer by day, programmer by night. Use my tools to increase your productivity, or browse this site to see what I'm up to. If you're making a product and publishing data or documentation, these tools are for you. I support common business tools and try to save you time and money. Use my tools to gain a competitive edge. You're probably already using the technology they build on. Find what works for you, plug it in, and beat your competitors to or on the market. Today's product is documentation, and my tools help you make that.
+                <h1 class="welcome-header">&#128736; Tools</h1>
+                <p class="justified-para">
+                    These tools have been built by me, for you. Download to go to the repository on GitHub, where you can download the .zip file. You can learn more about them on the project showcase for each, which includes some documentation on how to use them.
                 </p>
-            </div>
-            <footer id="contact-footer" role="contentinfo">
-                <ul class="footer-links">
-                    <li class="footer-item">
-                        <a href="https://www.reddit.com/r/technicalwriting/" aria-label="Reddit" class="footer-link">
-                            <img src="../../assets/icons/reddit-icon.png" alt="Reddit Icon" width="24" height="24" loading="lazy">
-                            Reddit
-                        </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn" class="footer-link">
-                            <img src="../../assets/icons/linkedin-icon.jpg" alt="LinkedIn Icon" width="24" height="24" loading="lazy">
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="https://github.com/hectorbarquero" aria-label="GitHub" class="footer-link">
-                            <img src="../../assets/icons/github-icon.png" alt="GitHub Icon" width="24" height="24" loading="lazy">
-                            GitHub
-                        </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="../../docs/LICENSE.txt" aria-label="GNU License Compliance Document" class="footer-link">
-                            <img src="../../assets/icons/gnu-public-license-icon.png" alt="GNU License Icon" width="24" height="24" loading="lazy">
-                            Compliance
-                        </a>
-                    </li>
-                </ul>
-                <p>Brought to you by Hector Barquero, &copy; 2024</p>
-            </footer>
+                <footer id="contact-footer" role="contentinfo">
+                    <ul class="footer-links">
+                        <li class="footer-item">
+                            <!-- reddit -->
+                            <a href="https://www.reddit.com/r/technicalwriting/" aria-label="Reddit" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/reddit-icon.png" alt="Reddit Icon" width="45" height="45" loading="lazy">
+                            </a>
+                        </li>
+                        <!-- linkedin -->
+                        <li class="footer-item">
+                            <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/linkedin-icon.png" alt="LinkedIn Icon" width="48" height="48" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <!-- github -->
+                            <a href="https://github.com/hectorbarquero" aria-label="GitHub" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/github-icon.png" alt="GitHub Icon" width="41" height="41" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <!-- open src license GNU -->
+                            <a href="../../docs/LICENSE.txt" aria-label="GNU License Compliance Document" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/gnu-public-license-icon.png" alt="GNU License Icon" width="45" height="45" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer-caption">Hector Barquero, &copy; 2024</p>
+                </footer>
         </div>
-        <main role="main">
-            <div class="right-pane">
-                <div class="timeline">
-                    <div class="navbar" role="navigation">
-                        <div class="nav-search">
-                            <ul>
-                                <li><a href="../welcome/index.html">Welcome</a></li>
-                                <li>
-                                    <a href="../tools/index.html">Tools</a></li>
-                                <li><a href="../about/index.html">About</a>
-                            </ul>
-                            <input type="text" id="search-input" placeholder="Search" aria-label="Search">
-                            <button type="button" aria-label="Search button"><span>Go</span></button>
-                    </div>
-                        <div class="showcase">
-                
-                            <!-- update with showcase group one row-->
-                            <section id="showcase-1" class="showcase-row" aria-labelledby="showcase-row-one">
-                                <div class="showcase-group" role="complementary">
-                                    <h2 class="ctrt-heading">Docs as code</h2>
-                                    <h3 class="third-indent-heading">Publish documentation online, right from your IDE.</h3>
-                                </div>
-                                <p>
-                                    <table class="showcase-table" role="table">
-                                        <caption class="visually-hidden">Tool Information</caption>
-                                        <thead>
-                                            <tr>
-                                                <th class="table-heading" scope="col">Type of tool</th>
-                                                <th class="table-heading" scope="col">Author</th>
-                                                <th class="table-heading" scope="col">Skill level</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td role="cell">CLI based</td>
-                                                <td role="cell">Hector Barquero</td>
-                                                <td role="cell">Intermediate</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </p>
-                                <div class="carousel" aria-label="showcase row one">
-                                    <div class="carousel-item">
-                                        <!--add image later, focusing on getting unit 2 done right now-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                         <!--add image later, focusing on getting unit 2 done right now-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                         <!--add image later, focusing on getting unit 2 done right now-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                </div>
-                            </section>
-            
-                            <!-- update with showcase group two row -->
-                            <section id="showcase-2" class="showcase-row" aria-labelledby="showcase-row-two">
-                                <div class="showcase-group" role="complementary">
-                                    <h2 class="ctrt-heading">Desktop published docs</h2>
-                                    <h3 class="third-indent-heading">Are your docs .pdf? These tools are for you./h3>
-                                </div>
-                                <p>
-                                    <table class="showcase-table" role="table">
-                                        <caption class="visually-hidden">Tool Information</caption>
-                                        <thead>
-                                            <tr>
-                                                <th class="table-heading" scope="col">Type of tool</th>
-                                                <th class="table-heading" scope="col">Author</th>
-                                                <th class="table-heading" scope="col">Skill level</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td role="cell">Desktop app based</td>
-                                                <td role="cell">Hector Barquero</td>
-                                                <td role="cell">Beginner</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </p>
-                                <div class="carousel" aria-label="Showcase row two">
-                                    <div class="carousel-item">
-                                        <!--add image later, focusing on getting unit 2 done right now-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <!--add image, focusing on getting unit 2 done right now-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <!--add image, focusing on getting unit 2 done right now-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                </div>
-                            </section>
-            
-                            <!-- update with showcase group three row -->
-                            <section id="showcase-3" class="showcase-row" aria-labelledby="showcase-row-three">
-                                <div class="showcase-group" role="complementary">
-                                    <h2 class="ctrt-heading">Product documentation</h2>
-                                    <h3 class="third-indent-heading">Need to handle datasheets, specs, or product docs? Check these out.</h3>
-                                </div>
-                                <p>
-                                    <table class="showcase-table" role="table">
-                                        <caption class="visually-hidden">Tool Information</caption>
-                                        <thead>
-                                            <tr>
-                                                <th class="table-heading" scope="col">Type of tool</th>
-                                                <th class="table-heading" scope="col">Author</th>
-                                                <th class="table-heading" scope="col">Skill level</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td role="cell">XML, CLI based</td>
-                                                <td role="cell">Hector Barquero</td>
-                                                <td role="cell">Intermediate</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </p>
-                                <div class="carousel" aria-label="Showcase Row 3 Carousel">
-                                    <div class="carousel-item">
-                                        <!--add image-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <!--add image-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <!--add image-->
-                                        <img src="../../assets/images/image-temp-create-site.png" alt="Description" width="300" height="200" loading="lazy">
-                                    </div>
-                                </div>
-                            </section>
-                    <section id="project-1" class="project-section left" aria-labelledby="project-1-heading">
-                        <h2 class="ctrt-heading">Project one</h2>
-                        <img src="../../assets/images/image-temp-create-site.png" alt="Project one image" width="600" height="400" loading="lazy">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-                            <ul>
-                                <li>Feature 1</li>
-                                <li>Feature 2</li>
-                                <li>Feature 3</li>
-                            </ul>
-                        </p>
-                        <!-- going to fix these links once I add tools to GH. For now, focusing on finishing unit 2-->
-                        <a href="https://github.com/hectorbarquero/technicalwriting_sandbox" aria-label="Project one GitHub">GitHub Repository</a>
-                    </section>
-
-                    <section id="project-2" class="project-section right" aria-labelledby="project-2-heading">
-                        <h2 class="ctrt-heading">Project two</h2>
-                        <img src="../../assets/images/image-temp-nvim-theme.jpg" alt="Project two image" width="600" height="400" loading="lazy">
-                        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
-                            <ul>
-                                <li>Feature 1</li>
-                                <li>Feature 2</li>
-                                <li>Feature 3</li>
-                            </ul>
-                        </p>
-                        <!-- going to fix these links once I add tools to GH. For now, focusing on finishing unit 2-->
-                        <a href="https://github.com/hectorbarquero/technicalwriting_sandbox" aria-label="Project two GitHub">GitHub Repository</a>
-                    </section>
-
-                    <section id="project-3" class="project-section left" aria-labelledby="project-3-heading">
-                        <h2 class="ctrt-heading">Project three</h2>
-                        <img src="../../assets/images/image-temp-create-site.png" alt="Project three image" width="600" height="400" loading="lazy">
-                        <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
-                            <ul>
-                                <li>Feature 1</li>
-                                <li>Feature 2</li>
-                                <li>Feature 3</li>
-                            </ul>
-                        </p>
-                        <!-- going to fix these links once I add tools to GH. For now, focusing on finishing unit 2-->
-                        <a href="https://github.com/hectorbarquero/technicalwriting_sandbox" aria-label="Project three GitHub">GitHub Repository</a>
-                    </section>
-                    <section id="expand-showcase-section" aria-labelledby="expand-showcase-heading">
-                        <h2 class="ctrt-heading">Showcase</h2>
-                        <iframe id="showcase-iframe" iframe src="showcase.html" title="Showcase"></iframe>
-                    </section>
+    </div>
+        <main class="right-pane" role="main">
+            <div class="navbar" role="navigation">
+                <div class="nav-search">
+                    <ul>
+                        <li><a href="../welcome/index.html">Welcome</a></li>
+                        <li><a href="../tools/index.html">Tools</a></li>
+                        <li><a href="../about/index.html">About</a></li>
+                    </ul>
+                    <input type="text" id="search-input" placeholder="Search" aria-label="Search">
+                    <button type="button" aria-label="Search button"><span>Go</span></button>
                 </div>
+            </div>
+            <div class="timeline">
+                <section id="news-posts" aria-labelledby="news-posts">
+                    <h2 class="post-ctrt-heading">Reference table</h2>
+                    <p class="justified-para">Use the reference table to find the tool you're looking for, grouped by type and skill level.</p>
+                    <p>
+                        <table role="table">
+                            <caption class="visually-hidden">Tool Information</caption>
+                            <thead>
+                                <tr>
+                                    <th class="post-third-indent-heading" scope="col">Type</th>
+                                    <th class="post-third-indent-heading" scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td role="cell">CLI based</td>
+                                    <td role="cell">Hector Barquero</td>
+                                    <td role="cell">Intermediate</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                </section>
             </div>
         </main>
     </div>

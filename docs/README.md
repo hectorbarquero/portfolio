@@ -3,25 +3,31 @@ Learn about the websites commitment to privacy and accessibility here.
 You can also find a map of the folder structure.
 
 # Folder structure
-Project  contains 20 directories, 46 files.
+Project  contains 16 directories, 54 files.
 
-+ assets contains: project assets, including scripts, sass, css, icons, and images.
++ assets contains: project assets, including sass, css, icons, and images.
 + docs contains: license, and README. For supporting project documentation, check GitHub through the tools links on the project site.
 + home contains: main root of site. Contains .html files for about, tools, and welcome -- the main three navigation options of the site. index.html is served up first, with a welcome screen, which serves as a way to load resources in advance.
 + **NEW** Assets now has a folder called *software*. This folder has my tools that I've authored to host on my site.
 
         .
         ├── assets
-        │   ├── fonts
         │   ├── icons
+        │   │   ├── amd-icon.png
         │   │   ├── apple-touch-icon.png
+        │   │   ├── bandai-icon.png
         │   │   ├── caf-icon.png
-        │   │   ├── factory-icon.jpg
+        │   │   ├── de-icon.jpg
+        │   │   ├── factory-icon.png
+        │   │   ├── framos-icon.png
         │   │   ├── gd-icon.png
         │   │   ├── github-icon.png
         │   │   ├── gnu-public-license-icon.png
-        │   │   ├── linkedin-icon.jpg
+        │   │   ├── intel-icon.jpg
+        │   │   ├── linkedin-icon.png
         │   │   ├── nintendo-icon.png
+        │   │   ├── nvidia-logo.png
+        │   │   ├── raw-thrills-icon.png
         │   │   ├── reddit-icon.png
         │   │   └── tssa-icon.jpg
         │   ├── images
@@ -30,7 +36,11 @@ Project  contains 20 directories, 46 files.
         │   │   ├── image-skull3-loader.svg
         │   │   ├── image-temp-create-site.png
         │   │   ├── image-temp-nvim-theme.jpg
-        │   │   └── og-image.png
+        │   │   ├── og-image.png
+        │   │   ├── tool-dependencies-2.gif
+        │   │   ├── tool-postproc-4.gif
+        │   │   ├── tool-preproc-3.gif
+        │   │   └── tool-problem-1.gif
         │   ├── js
         │   │   ├── changelog.json
         │   │   ├── downloads.js
@@ -38,27 +48,23 @@ Project  contains 20 directories, 46 files.
         │   │   ├── news.js
         │   │   ├── showcase.js
         │   │   └── testimonials.js
-        │   ├── sass
-        │   │   ├── main.scss
-        │   │   └── modules
-        │   │       ├── common
-        │   │       │   └── reset.scss
-        │   │       ├── layouts
-        │   │       │   ├── body.scss
-        │   │       │   ├── headings.scss
-        │   │       │   ├── navbar.scss
-        │   │       │   └── para.scss
-        │   │       └── pages
-        │   │           ├── about.scss
-        │   │           ├── landing.scss
-        │   │           ├── tools.scss
-        │   │           └── welcome.scss
-        │   ├── software
-        │   │   └── xml-preprocessor
-        │   │       ├── postprocXML.js
-        │   │       ├── preprocXML.js
-        │   │       └── source.xml
-        │   └── vendor
+        │   └── sass
+        │       ├── main.scss
+        │       └── modules
+        │           ├── common
+        │           │   └── reset.scss
+        │           ├── layouts
+        │           │   ├── body.scss
+        │           │   ├── email.scss
+        │           │   ├── footer.scss
+        │           │   ├── headings.scss
+        │           │   ├── navbar.scss
+        │           │   └── para.scss
+        │           └── pages
+        │               ├── about.scss
+        │               ├── landing.scss
+        │               ├── tools.scss
+        │               └── welcome.scss
         ├── css
         │   ├── styles.css
         │   └── styles.css.map
@@ -67,11 +73,9 @@ Project  contains 20 directories, 46 files.
         │   └── README.md
         ├── home
         │   ├── about
-        │   │   ├── faq.html
         │   │   └── index.html
         │   ├── tools
-        │   │   ├── index.html
-        │   │   └── showcase.html
+        │   │   └── index.html
         │   └── welcome
         │       └── index.html
         ├── index.html
