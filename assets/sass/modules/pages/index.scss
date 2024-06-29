@@ -106,7 +106,6 @@ form {
         border-radius: 4px;
     }
 
-    /* need to come back here to debug the sticky position of button - it should be further left/right but i need to resolve the right-pane first*/
     button {
         padding: 0.5rem 1rem;
         font-size: 1rem;
@@ -114,7 +113,6 @@ form {
         border-radius: 4px;
         background-color: #1E536E;
         color: white;
-        cursor: pointer;
 
         &:hover {
             background-color: #0056b3;

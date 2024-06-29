@@ -187,7 +187,7 @@ p {
 }
 
 .navbar a:hover {
-  color: #ffcc00;
+  color: #0056b3;
 }
 
 .subscribe-form {
@@ -292,7 +292,7 @@ p {
   filter: grayscale(100%);
 }
 .footer-links .footer-link:hover {
-  color: #1E536E;
+  color: #0056b3;
 }
 
 /* I am not using this anymore but if I re-introduce text, it's nice to have specificity here*/
@@ -312,6 +312,66 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+/* my table styles */
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.modern-table th, .modern-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.modern-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* added alternating bg color */
+.modern-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.modern-table tbody tr:hover {
+  background-color: #e9e9e9;
+}
+
+/* Button styling for the "Download" link */
+.btn-download {
+  display: inline-block;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: #1E536E;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 2rem;
+  min-height: 2rem;
+  align-self: baseline;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /*page sass > css*/
@@ -468,7 +528,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* need to come back here to debug the sticky position of button - it should be further left/right but i need to resolve the right-pane first*/
 }
 form label {
   margin-bottom: 0.5rem;
@@ -488,7 +547,6 @@ form button {
   border-radius: 4px;
   background-color: #1E536E;
   color: white;
-  cursor: pointer;
 }
 form button:hover {
   background-color: #0056b3;

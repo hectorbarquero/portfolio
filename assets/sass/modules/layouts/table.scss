@@ -1,0 +1,59 @@
+/* my table styles */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.modern-table th, .modern-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.modern-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* added alternating bg color */
+.modern-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.modern-table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+/* Button styling for the "Download" link */
+.btn-download {
+    display: inline-block;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #1E536E;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 2rem;
+    min-height: 2rem;
+    align-self: baseline;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
