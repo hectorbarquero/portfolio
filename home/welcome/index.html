@@ -43,7 +43,58 @@
                 <p class="justified-para">
                     I'm always looking to connect-- so feel free to find and connect with me on LinkedIn. &#128075;
                 </p>
-                                                
+                <!-- Email validation solution, source Rasel Mahmud: https://gist.github.com/rsmahmud/f6ad75b8a212a18720fd833b54ea6644 -->
+                <!-- barquerohr: mod flag var name && alerts for clarity, -rm val checks for brevity-->
+                <script type="text/javascript">
+                    function Validate() {
+                        var email = document.getElementById("email").value;
+                
+                        if(email == "") {
+                            alert("Empty email field. Provide your email id.");
+                            document.getElementById("email").focus();
+                            return false;
+                        }
+                
+                        var len = email.length;
+                        var atcount = 0;
+                        var atpos;
+                        var dotAfterAtFound = false;
+                
+                        for(var i = 0; i < len; i++) {
+                            if(email[i] == '@') {
+                                atpos = i;
+                                atcount++;
+                            }
+                            if(email[i] == ' ') {
+                                alert("Invalid email: unexpected character. Try again.");
+                                document.getElementById("email").focus();
+                                return false;
+                            }
+                        }
+                
+                        if(atcount != 1 || email[len-1] == '.' || email[len-2] == '.' || email[atpos+1] == ".") {
+                            alert("Invalid email. Try again.");
+                            document.getElementById("email").focus();
+                            return false;
+                        }
+                
+                        for(var i = atpos + 1; i < len; i++) {
+                            if(email[i] == ".") {
+                                dotAfterAtFound = true;
+                                break;
+                            }
+                        }
+                
+                        if(!dotAfterAtFound) {
+                            alert("Invalid email: '.' character missing after '@'. Try again.");
+                            document.getElementById("email").focus();
+                            return false;
+                        }
+                
+                        alert("Success.");
+                        return true;
+                    }
+                </script>                               
                 <div class="subscribe-form">
                     <form action="mailto:hectorbarquero@hotmail.com" method="post" enctype="text/plain" onsubmit="return Validate()" novalidate>
                         <div class="form-input">
