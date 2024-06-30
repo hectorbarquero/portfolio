@@ -1,7 +1,5 @@
-/* I had to write this early in unit 3 bc I can't visualize or get 
- * my welcome.index page to work without handling the testimonials per my
- * site plan in unit 1. I'll switch this to GSAP later because it's really
- * clunky and hacky.
+/* something isn't right with this yet - first i'll fix responive layout, then
+   come back to debug. the scroll chugs + handles are not fixed in position
  */
 
 document.addEventListener('DOMContentLoaded', () => {

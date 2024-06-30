@@ -61,7 +61,7 @@
   margin-bottom: 0.75rem;
 }
 
-/*$light-grey-start: #9BA8AB;*/
+/* body style */
 body {
   background: #CCD0CF;
   background: -webkit-linear-gradient(top, #CCD0CF, #f1f1f1);
@@ -105,6 +105,16 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+.bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #253745;
+  font-weight: bold;
+}
+
+/* navbar style */
 .navbar {
   position: fixed;
   top: 0;
@@ -201,6 +211,7 @@ p {
   color: #ffffff;
 }
 
+/* form style, incl nav bar form */
 .subscribe-form {
   display: flex;
   align-items: center;
@@ -265,6 +276,7 @@ p {
   font-weight: bold;
 }
 
+/* footer style */
 .footer-links {
   display: flex;
   justify-content: center;
@@ -325,7 +337,7 @@ p {
   justify-content: center;
 }
 
-/* my table styles */
+/* table style */
 .modern-table {
   width: 100%;
   border-collapse: collapse;
@@ -341,7 +353,7 @@ p {
   background: linear-gradient(45deg, #1E3A5F, #3A8FCB, #5AA9E6, #1E536E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #fff; /* Fallback for older browsers */
+  color: #fff; /* doesnt seem to work on older webkit/browsers, so here's my fall back */
 }
 
 .modern-table tbody tr:nth-child(even) {
@@ -352,7 +364,6 @@ p {
   background-color: #e9e9e9;
 }
 
-/* Button styling for the "Download" link */
 .btn-download {
   display: inline-block;
   font-size: 0.875rem;
@@ -384,6 +395,107 @@ p {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* Apply styles when #privacy-popup is targeted */
+#privacy-popup:target {
+  display: block;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto; /* Enable scrolling if content exceeds max-height */
+  background: #fff; /* Solid background for the popup */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1002; /* Higher z-index than the overlay and blur */
+  display: none; /* Hidden by default */
+  border: 4px solid transparent; /* Initially transparent border, wider */
+}
+
+/* Close button styles */
+.popup .popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #1e536e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100; /* Ensure close button appears above popup content */
+}
+
+/* Move close button slightly outside of popup */
+.popup.show .popup-close {
+  top: 10px; /* Keep it aligned with the top of the popup */
+  right: calc(50% - 310px); /* Adjust as needed based on your layout */
+}
+
+/* Overlay styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001; /* Above the popup */
+  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent background */
+  display: none; /* Hidden by default */
+  border: 4px solid transparent; /* Initially transparent border, wider */
+}
+
+/* Border animation effect for overlay */
+@keyframes border-pulse {
+  0% {
+    border-color: transparent;
+    box-shadow: 0 0 30px rgba(30, 83, 110, 0.8); /* Adding a box-shadow for a glow effect */
+  }
+  50% {
+    border-color: #1e536e; /* Highlight color */
+    box-shadow: 0 0 50px rgba(30, 83, 110, 0.8); /* Wider glow effect */
+  }
+  100% {
+    border-color: transparent;
+    box-shadow: 0 0 30px rgba(30, 83, 110, 0.8); /* Back to initial shadow */
+  }
+}
+/* Apply animation to overlay when shown */
+#privacy-popup:target .popup-overlay {
+  animation: border-pulse 1s infinite; /* Faster animation */
+  border-color: #1e536e; /* Ensure initial border color matches animation */
+}
+
+/* Blur effect for background */
+.popup-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(30px); /* Stronger blur effect */
+  -webkit-backdrop-filter: blur(30px); /* For Safari */
+  z-index: 1000; /* Below the popup */
+  display: none; /* Hidden by default */
+}
+
+/* Show popup and overlay when #privacy-popup is targeted */
+#privacy-popup:target .popup-overlay,
+#privacy-popup:target .popup-blur {
+  display: block;
 }
 
 /*page sass > css*/
