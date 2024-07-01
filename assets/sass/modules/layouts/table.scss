@@ -12,7 +12,7 @@
 
 .modern-table th {
     background: linear-gradient(45deg, #1E3A5F, #3A8FCB, #5AA9E6, #1E536E);
-    -webkit-background-clip: text;
+    background-clip: text; // see https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip#browser_compatibility -> webkit was giving me error
     -webkit-text-fill-color: transparent;
     color: #fff; /* doesnt seem to work on older webkit/browsers, so here's my fall back */
 }

@@ -102,7 +102,7 @@ p {
   line-height: 1.6;
   margin: 10px 0;
   background: linear-gradient(45deg, #1E3A5F, #3A8FCB, #5AA9E6, #1E536E);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -352,7 +352,7 @@ p {
 
 .modern-table th {
   background: linear-gradient(45deg, #1E3A5F, #3A8FCB, #5AA9E6, #1E536E);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff; /* doesnt seem to work on older webkit/browsers, so here's my fall back */
 }
