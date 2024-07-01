@@ -7,7 +7,8 @@ Project  contains 16 directories, 48 files.
 
 + home contains: main root of site. Contains .html files for about, tools, and welcome -- the main three navigation options of the site. index.html is served up first with a welcome screen, which serves as a way to hydrate resources in advance.
 
-+ **NEW** You can preview this website by checking the live link in my About section on GitHub ---->
++ **NEW, BUT IN WORK** You can preview this website by checking the live link in my About section on GitHub -->
++ **It's just going to stay stuck on welcome. I am currently programming a dns fetch + hydrating module, so it's not going to load anything yet.**
 
         .
         ├── assets
