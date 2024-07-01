@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*reset*/
 /*this is my reset style sheet, standards by Tantek Çelik, part of the Yahoo User Interface Library (YUI). I'm going to normalize formatting to remove browser styles.*/
+/* credits to Tantek Çelik, part of the Yahoo User Interface Library (YUI) */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap");
 * {
@@ -120,7 +121,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Example gradient */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #ffffff;
@@ -318,7 +319,7 @@ p {
   color: #0056b3;
 }
 
-/* I am not using this anymore but if I re-introduce text, it's nice to have specificity here*/
+/* nice to have overrides, not necessary but if I re-introduce custom text, it's nice to have specificity here*/
 .footer p {
   font-size: 0.6rem;
   margin-top: 0.25rem;
@@ -397,12 +398,10 @@ p {
   border: 0;
 }
 
-/* Apply styles when #privacy-popup is targeted */
 #privacy-popup:target {
   display: block;
 }
 
-/* Popup styles */
 .popup {
   position: fixed;
   top: 50%;
@@ -411,17 +410,16 @@ p {
   width: 80%;
   max-width: 600px;
   max-height: 80%;
-  overflow-y: auto; /* Enable scrolling if content exceeds max-height */
-  background: #fff; /* Solid background for the popup */
+  overflow-y: auto;
+  background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1002; /* Higher z-index than the overlay and blur */
-  display: none; /* Hidden by default */
-  border: 4px solid transparent; /* Initially transparent border, wider */
+  z-index: 1002;
+  display: none;
+  border: 4px solid transparent;
 }
 
-/* Close button styles */
 .popup .popup-close {
   position: absolute;
   top: 10px;
@@ -436,60 +434,56 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1100; /* Ensure close button appears above popup content */
+  z-index: 1100;
 }
 
-/* Move close button slightly outside of popup */
 .popup.show .popup-close {
-  top: 10px; /* Keep it aligned with the top of the popup */
-  right: calc(50% - 310px); /* Adjust as needed based on your layout */
+  top: 10px;
+  right: calc(50% - 310px);
 }
 
-/* Overlay styles */
 .popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1001; /* Above the popup */
-  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent background */
-  display: none; /* Hidden by default */
-  border: 4px solid transparent; /* Initially transparent border, wider */
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  border: 4px solid transparent;
 }
 
-/* Border animation effect for overlay */
+/* slight animation here - currently not functioning, try again unit 5. */
 @keyframes border-pulse {
   0% {
     border-color: transparent;
-    box-shadow: 0 0 30px rgba(30, 83, 110, 0.8); /* Adding a box-shadow for a glow effect */
+    box-shadow: 0 0 30px rgba(30, 83, 110, 0.8);
   }
   50% {
-    border-color: #1e536e; /* Highlight color */
-    box-shadow: 0 0 50px rgba(30, 83, 110, 0.8); /* Wider glow effect */
+    border-color: #1e536e;
+    box-shadow: 0 0 50px rgba(30, 83, 110, 0.8);
   }
   100% {
     border-color: transparent;
-    box-shadow: 0 0 30px rgba(30, 83, 110, 0.8); /* Back to initial shadow */
+    box-shadow: 0 0 30px rgba(30, 83, 110, 0.8);
   }
 }
-/* Apply animation to overlay when shown */
 #privacy-popup:target .popup-overlay {
-  animation: border-pulse 1s infinite; /* Faster animation */
-  border-color: #1e536e; /* Ensure initial border color matches animation */
+  animation: border-pulse 1s infinite;
+  border-color: #1e536e;
 }
 
-/* Blur effect for background */
 .popup-blur {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(30px); /* Stronger blur effect */
-  -webkit-backdrop-filter: blur(30px); /* For Safari */
-  z-index: 1000; /* Below the popup */
-  display: none; /* Hidden by default */
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  z-index: 1000;
+  display: none;
 }
 
 /* Show popup and overlay when #privacy-popup is targeted */

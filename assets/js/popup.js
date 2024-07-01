@@ -1,13 +1,15 @@
+// this program handles a popup overlay for important call ups.
+
 document.getElementById('open-popup').addEventListener('click', function(event) {
     event.preventDefault();
     
-    // Show the popup and overlay
     var popup = document.getElementById('privacy-popup');
     var overlay = document.getElementById('popup-overlay');
     
     popup.style.display = 'block';
     overlay.style.display = 'block';
-    document.body.style.overflow = 'hidden'; // Prevent scrolling of body content
+    // prevent scrolling of .content behind the pop up
+    document.body.style.overflow = 'hidden';
 });
 
 document.getElementById('popup-close').addEventListener('click', function() {
@@ -16,7 +18,8 @@ document.getElementById('popup-close').addEventListener('click', function() {
     
     popup.style.display = 'none';
     overlay.style.display = 'none';
-    document.body.style.overflow = ''; // Restore scrolling of body content
+    //restore scroll of body once popup is gone. otherwise, above ln 11 stays
+    document.body.style.overflow = '';
 });
 
 document.getElementById('popup-overlay').addEventListener('click', function() {
@@ -25,5 +28,6 @@ document.getElementById('popup-overlay').addEventListener('click', function() {
     
     popup.style.display = 'none';
     overlay.style.display = 'none';
-    document.body.style.overflow = ''; // Restore scrolling of body content
+    //restore scroll of body once popup is gone. otherwise, above ln 11 stays
+    document.body.style.overflow = ''; 
 });

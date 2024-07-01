@@ -4,7 +4,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Example gradient */
+    // gradient ctrl for the navbar. increase blur(10px) to set a more intense blur
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: #ffffff;

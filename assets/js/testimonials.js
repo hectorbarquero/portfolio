@@ -1,5 +1,6 @@
-/* something isn't right with this yet - first i'll fix responive layout, then
-   come back to debug. the scroll chugs + handles are not fixed in position
+/* something isn't right with this yet - I had it working before my CSS squashed the width.
+   first i'll fix responive layout, then come back to debug. the scroll chugs + handles are 
+   not fixed in position.
  */
 
 document.addEventListener('DOMContentLoaded', () => {

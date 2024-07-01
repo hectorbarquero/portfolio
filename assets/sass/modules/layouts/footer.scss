@@ -46,7 +46,7 @@
     }
 }
 
-/* I am not using this anymore but if I re-introduce text, it's nice to have specificity here*/
+/* nice to have overrides, not necessary but if I re-introduce custom text, it's nice to have specificity here*/
 .footer p {
     font-size: 0.6rem;
     margin-top: 0.25rem;
