@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function rotateLoaders() {
         rotationCount++;
         
-        if (rotationCount > 4) {
+        if (rotationCount > 3) {
             fadeOutWelcomeAnimation();
         } else {
             setTimeout(rotateLoaders, 1000);
