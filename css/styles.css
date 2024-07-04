@@ -64,11 +64,11 @@
 
 /* body style */
 body {
-  background: #CCD0CF;
-  background: -webkit-linear-gradient(top, #CCD0CF, #f1f1f1);
-  background: -o-linear-gradient(top, #CCD0CF, #f1f1f1);
-  background: -moz-linear-gradient(top, #CCD0CF, #f1f1f1);
-  background: linear-gradient(to bottom, #CCD0CF, #f1f1f1);
+  background: #f1f1f1;
+  background: -webkit-linear-gradient(top, #f1f1f1, #ffffff);
+  background: -o-linear-gradient(top, #f1f1f1, #ffffff);
+  background: -moz-linear-gradient(top, #f1f1f1, #ffffff);
+  background: linear-gradient(to bottom, #f1f1f1, #ffffff);
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -146,7 +146,8 @@ p {
   border-radius: 8px;
   background-color: #fff;
   color: #222;
-  width: 120px;
+  width: 100%;
+  max-width: 240px;
   box-sizing: border-box;
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   height: auto;
@@ -492,69 +493,7 @@ p {
   display: block;
 }
 
-/* add particles js*/
-/* site: particles.js
- * credit goes to https://github.com/VincentGarreau/particles.js
- * MIT license: http://opensource.org/licenses/MIT
- * http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js
- */
-body {
-  margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #11212d;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: 0.8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
-}
-
+/* add particles js IN UNIT 6 OR 7*/
 /*page sass > css*/
 .loaders-container {
   display: flex;
@@ -631,7 +570,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 13rem;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -640,6 +578,24 @@ html {
   z-index: 1;
 }
 
+/* small mobile <= 600px */
+@media only screen and (max-width: 600px) {
+  .left-pane {
+    padding: 1rem !important;
+  }
+}
+/* tablets portrait 600px to 900px */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .left-pane {
+    padding: 2rem !important;
+  }
+}
+/* monitors <= 900px) */
+@media only screen and (min-width: 900px) {
+  .left-pane {
+    padding: 13rem !important;
+  }
+}
 .right-pane {
   flex: 1;
   overflow-y: auto;

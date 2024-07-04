@@ -1,7 +1,7 @@
 /* body style */
 
-$light-grey-start: #CCD0CF;
-$light-grey-end: #f1f1f1;
+$light-grey-start: #f1f1f1;
+$light-grey-end: #ffffff;
 
 @mixin gradient-background($start-color, $end-color) {
     background: $start-color;

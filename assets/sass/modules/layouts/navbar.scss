@@ -30,7 +30,9 @@
     border-radius: 8px;
     background-color: #fff;
     color: #222;
-    width: 120px;
+    // was 120% b4 testing
+    width: 100%;
+    max-width: 240px;
     box-sizing: border-box;
     transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     height: auto;
