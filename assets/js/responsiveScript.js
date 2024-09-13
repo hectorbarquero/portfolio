@@ -1,21 +1,20 @@
+// the purpose of this script is to help debug issues with display, since this site was build desktop first.
+// ill use this to check the output in console against the media query, and know which i need to debug easily.
+
 document.addEventListener('DOMContentLoaded', function() {
-    function adjustPadding() {
-        const leftPane = document.querySelector('.left-pane');
+    function checkMediaQuery() {
         const width = window.innerWidth;
         console.log(`Window width: ${width}px`);
-        console.log("Adjusting padding");
-        if (width <= 600) {
-            console.log("Padding set to neg 10 rem")
-            leftPane.style.padding = '-10rem';
-        } else if (width > 600 && width <= 900) {
-            console.log("Padding set to neg 5 rem")
-            leftPane.style.padding = '-5rem';
+
+        if (width <= 1315) {
+            console.log("Media query: selected for small devices and mobile, switch to column grid - less than 1315px");
+        } else if (width > 1315 && width <= 1699) {
+            console.log("Media query: selected for tablets and laptops, portrait 1316px to 1699px");
         } else {
-            console.log("Padding set to 1 rem")
-            leftPane.style.padding = '1rem';
+            console.log("Media query: selected for monitors large - starts at 1700px");
         }
     }
 
-    window.addEventListener('resize', adjustPadding);
-    adjustPadding();
+    window.addEventListener('resize', checkMediaQuery);
+    checkMediaQuery()
 });

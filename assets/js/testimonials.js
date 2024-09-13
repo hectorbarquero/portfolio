@@ -1,6 +1,5 @@
-/* something isn't right with this yet - I had it working before my CSS squashed the width.
-   first i'll fix responive layout, then come back to debug. the scroll chugs + handles are 
-   not fixed in position.
+/* this program handles the carousel, manipulating the movement and transition
+   with an event listener waiting on mouse hover.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.carousel-control.next');
     let currentIndex = 0;
     let intervalId = null;
+
     // time to move = the rate of n, and transition to adjust the time from a to b
     const intervalTime = 1500; 
     const transitionDuration = 3000; 

@@ -18,7 +18,7 @@
     z-index: 1;
 }
 
-/* small mobile <= 600px */
+/* selected for small devices and movile, switch to column grid - less than 1315px */
 @media only screen and (max-width: 1315px) {
     .container {
         flex-direction: column !important;
@@ -40,14 +40,14 @@
 
 }
 
-/* tablets portrait 600px to 900px */
+/* selected for tablets and laptops, portrait 1316px to 1699px */
 @media only screen and (min-width: 1316px) and (max-width: 1699px) {
     .left-pane {
         padding: 2rem !important;
     }
 }
 
-/* monitors <= 900px) */
+/* selected for monitors large - starts at 1700px) */
 @media only screen and (min-width: 1700px) {
     .left-pane {
         padding: 13rem !important;

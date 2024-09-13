@@ -1,3 +1,6 @@
+// This program handles a make-shift hydration and resource pre-fetch
+// since I am self hosting, I want to avoid website jank and redirects.
+
 document.addEventListener('DOMContentLoaded', function() {
     const loaders = document.querySelectorAll('.loader');
     let rotationCount = 0;
