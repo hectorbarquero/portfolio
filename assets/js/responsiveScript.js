@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(`Window width: ${width}px`);
         console.log("Adjusting padding");
         if (width <= 600) {
+            console.log("Padding set to neg 10 rem")
+            leftPane.style.padding = '-10rem';
+        } else if (width > 600 && width <= 900) {
+            console.log("Padding set to neg 5 rem")
+            leftPane.style.padding = '-5rem';
+        } else {
             console.log("Padding set to 1 rem")
             leftPane.style.padding = '1rem';
-        } else if (width > 600 && width <= 900) {
-            console.log("Padding set to 2 rem")
-            leftPane.style.padding = '2rem';
-        } else {
-            console.log("Padding set to 13 rem")
-            leftPane.style.padding = '13rem';
         }
     }
 

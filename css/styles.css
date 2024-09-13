@@ -579,19 +579,31 @@ html {
 }
 
 /* small mobile <= 600px */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1315px) {
+  .container {
+    flex-direction: column !important;
+  }
   .left-pane {
-    padding: 1rem !important;
+    flex: none;
+    margin: 0;
+    width: 100%;
+    position: static;
+  }
+  .right-pane {
+    flex: 1;
+    padding: 4rem;
+    margin: 0%;
+    margin-left: 0 !important;
   }
 }
 /* tablets portrait 600px to 900px */
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 1316px) and (max-width: 1699px) {
   .left-pane {
     padding: 2rem !important;
   }
 }
 /* monitors <= 900px) */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1700px) {
   .left-pane {
     padding: 13rem !important;
   }
