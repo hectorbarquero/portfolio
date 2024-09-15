@@ -493,7 +493,6 @@ p {
   display: block;
 }
 
-/* add particles js IN UNIT 6 OR 7*/
 /*page sass > css*/
 .loaders-container {
   display: flex;
@@ -578,6 +577,18 @@ html {
   z-index: 1;
 }
 
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 /* selected for small devices and movile, switch to column grid - less than 1315px */
 @media only screen and (max-width: 1315px) {
   .container {
@@ -613,14 +624,15 @@ html {
   overflow-y: auto;
   padding: 4rem;
   margin-left: 33.3333333333vw;
-  background-color: transparent;
+  background-color: white;
+  z-index: 15;
 }
 
 .content {
   max-width: 600px;
   padding: 1.5rem;
   margin: 2rem auto;
-  background-color: transparent;
+  background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
