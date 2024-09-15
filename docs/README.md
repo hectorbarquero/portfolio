@@ -1,7 +1,9 @@
 # Folder structure
-Project  contains 16 directories, 48 files.
+Project  contains 16 directories, 53 files.
 
-> **NEW, BUT IN WORK** You can preview this website by checking the live link in my About section on GitHub -->
+> **NEW** Preview this website by checking the live link in my About section on GitHub -->
+hectorbarquero.github.io/portfolio/
+
 
 + assets contains: project assets, including sass, css, icons, and images.
 
@@ -39,8 +41,13 @@ Project  contains 16 directories, 48 files.
         │   │   ├── tool-preproc-3.gif
         │   │   └── tool-problem-1.gif
         │   ├── js
+        │   │   ├── app.js
+        │   │   ├── loader.js
+        │   │   ├── particles.js
         │   │   ├── popup.js
-        │   │   └── testimonials.js
+        │   │   ├── responsiveScript.js
+        │   │   ├── testimonials.js
+        │   │   └── validation.js
         │   └── sass
         │       ├── main.scss
         │       └── modules
