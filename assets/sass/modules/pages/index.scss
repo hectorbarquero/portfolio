@@ -31,7 +31,7 @@
 }
 
 /* selected for small devices and mobile, switch to column grid - less than 1315px */
-@media only screen and (min-width: 1315px) and (max-width: 1699px) {
+@media only screen and (min-width: 450px) and (max-width: 1699px) {
     .container {
         flex-direction: column !important;
     }
