@@ -589,8 +589,8 @@ html {
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* selected for small devices and movile, switch to column grid - less than 1315px */
-@media only screen and (max-width: 1315px) {
+/* selected for small devices and mobile, switch to column grid - less than 1315px */
+@media only screen and (min-width: 1315px) and (max-width: 1699px) {
   .container {
     flex-direction: column !important;
   }
@@ -608,11 +608,6 @@ html {
   }
 }
 /* selected for tablets and laptops, portrait 1316px to 1699px */
-@media only screen and (min-width: 1316px) and (max-width: 1699px) {
-  .left-pane {
-    padding: 2rem !important;
-  }
-}
 /* selected for monitors large - starts at 1700px) */
 @media only screen and (min-width: 1700px) {
   .left-pane {
