@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = 'home/welcome/index.html';
             }, 2000);
         } else {
-            console.error('#welcome-animation element not found!');
+            console.error('ERROR element name: #welcome-animation not found.');
         }
     }
 });
