@@ -266,3 +266,45 @@ form {
     border-radius: 45px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
+// tools index: repo related api styling
+
+.repo-item {
+    margin-bottom: 20px;
+  }
+  
+  .repo-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #11212D;
+    text-align: left;
+    margin-bottom: .75rem;
+  }
+  
+  .repo-title a {
+    text-decoration: none;
+    color: #1E536E;
+  }
+  
+  .repo-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .repo-description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .repo-stats {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .repo-divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+  }

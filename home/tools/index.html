@@ -91,28 +91,43 @@
             <div class="timeline">
                 <section id="news-posts" aria-labelledby="news-posts">
                     <h2 class="post-ctrt-heading">Downloads</h2>
-                    <p class="justified-para">Use the reference table to find the tool you're looking for, grouped by type and skill level.</p>
-                    <p>
-                        <table class="modern-table" role="table">
-                            <caption class="visually-hidden">Tool Information</caption>
-                            <thead>
-                                <tr>
-                                    <th class="post-third-indent-heading" scope="col">Function</th>
-                                    <th class="post-third-indent-heading" scope="col">Link</th>
-                                </tr>
-                            </thead>
+                    <p class="justified-para">Use the reference table to find the tool you're looking for, or browse my GitHub works to see what I'm up to.</p>
+                    <table class="modern-table" role="table">
+                        <caption class="visually-hidden">Tool Information</caption>
+                        <thead>
+                            <tr>
+                                <th class="post-third-indent-heading" scope="col">Tool & purpose</th>
+                                <th class="post-third-indent-heading" scope="col">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td role="cell"><p class="justified-para">My script removes xml id tags, and replaces them with a placeholder char. Leaves other tags alone.</p></td>
+                                <td role="cell"><a href="https://github.com/hectorbarquero/xml-preprocessor" target="_blank" rel="noopener" class="btn-download">Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="modern-table" role="table">
+                        <caption class="visually-hidden">GitHub repositories</caption>
+                        <thead>
+                            <tr>
+                                <th class="post-third-indent-heading" scope="col">Browse my work</th>
+                            </tr>
                             <tbody>
                                 <tr>
-                                    <td role="cell"><p class="justified-para">My script removes xml id tags, and replaces them with a placeholder char. Leaves other tags alone.</p></td>
-                                    <td role="cell"><a href="https://github.com/hectorbarquero/xml-preprocessor" target="_blank" rel="noopener" class="btn-download">Download</a></td>
+                                    <!-- new for unit 7 - adding here to keep styling same as th tr-->
+                                    <td role="cell" colspan="2">
+                                        <div id="github-repos"></div>
+                                    </td>
                                 </tr>
                             </tbody>
-                        </table>                        
-                    </p>
+                        </thead>
+                    </table>
                 </section>
-            </div>
+            </div>            
         </main>
     </div>
     <script src="../../assets/js/responsiveScript.js"></script>
+    <script src="../../assets/js/github-api.js"></script>
 </body>
 </html>
