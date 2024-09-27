@@ -1,4 +1,4 @@
-// the purpose of this script is to help debug issues with display, since this site was build desktop first.
+// the purpose of this script is to help debug issues with display, since this site was build desktop first and then i added mobile and small screens
 // ill use this to check the output in console against the media query, and know which i need to debug easily.
 
 document.addEventListener('DOMContentLoaded', function() {
